@@ -39,28 +39,36 @@
 <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-tertiary-fixed text-on-tertiary-fixed rounded-full text-xs uppercase tracking-widest self-center lg:self-start font-sans font-semibold">
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>TRUSTED BY MILLIONS WORLDWIDE</div>
 <h1 class="text-5xl md:text-6xl lg:text-7xl font-headline leading-[1.1] text-on-surface">Meaningful Greetings, <br><em class="text-[#DC1F26] italic font-serif">Made</em><br><em class="text-[#DC1F26] italic font-serif">Effortless</em></h1>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-lg leading-relaxed mx-auto lg:mx-0">Over 30,000 ecards for birthdays, anniversaries, holidays, and every moment that matters.</p>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-lg leading-relaxed mx-auto lg:mx-0">Find ecards for birthdays, anniversaries, holidays, and every moment that matters.</p>
 <div class="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start">
 <a href="https://apps.apple.com/in/app/greeting-cards-wishes/id718873921" class="transition-all duration-300 hover:scale-110 hover:-translate-y-1 active:scale-95"><img alt="Download on the App Store" class="h-14 w-auto object-contain drop-shadow-xl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png"></a>
 <a href="https://play.google.com/store/apps/details?id=com.g123" class="transition-all duration-300 hover:scale-110 hover:-translate-y-1 active:scale-95"><img alt="Get it on Google Play" class="h-14 w-auto object-contain drop-shadow-xl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png"></a>
 </div>
 </div>
-<div class="flex-1 relative w-full flex justify-center items-center py-12 lg:py-20 h-[380px] sm:h-[450px] lg:h-[600px] perspective-1000">
-<!-- Left Phone (hero_2.jpg) -->
-<div class="absolute left-1/2 -translate-x-[85%] sm:-translate-x-[100%] lg:-translate-x-[110%] bottom-8 lg:bottom-12 w-28 sm:w-40 lg:w-56 h-[260px] sm:h-[360px] lg:h-[480px] z-10 transform -rotate-12 transition-all duration-700 hover:rotate-[-6deg] hover:-translate-y-8 hover:scale-110 hover:z-30 cursor-pointer">
-<img alt="Previous app version comparison" class="w-full h-full object-cover rounded-[2rem] shadow-2xl border-2 sm:border-4 border-stone-800" src="hero_2.jpg">
-</div>
-<!-- Right Phone (hero_1.jpg) -->
-<div class="absolute left-1/2 translate-x-[20%] sm:translate-x-[10%] lg:translate-x-[15%] bottom-16 lg:bottom-20 w-24 sm:w-36 lg:w-48 h-[220px] sm:h-[300px] lg:h-[400px] z-10 transform rotate-12 transition-all duration-700 hover:rotate-[6deg] hover:-translate-y-8 hover:scale-110 hover:z-30 cursor-pointer">
-<img alt="App eCard showcase" class="w-full h-full object-cover rounded-[2rem] shadow-2xl border-2 sm:border-4 border-stone-800" src="hero_1.jpg">
-</div>
-<!-- Center Phone (hero_3.jpg) -->
-<div class="relative z-20 w-40 sm:w-48 lg:w-64 h-[320px] sm:h-[400px] lg:h-[520px] transform transition-all duration-700 hover:-translate-y-8 hover:scale-[1.15] cursor-pointer">
-<img alt="App home screen" class="w-full h-full object-cover rounded-[2.5rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] border-4 lg:border-[8px] border-stone-900" src="hero_3.jpg">
-<!-- Glossy Overlay -->
-<div class="absolute inset-0 rounded-[2.5rem] bg-gradient-to-tr from-white/10 to-transparent pointer-events-none"></div>
-</div>
-</div>
+    <!-- Mobile Image Stack (Hidden on Desktop) -->
+    <div class="flex lg:hidden flex-col items-center gap-8 w-full max-w-sm mx-auto py-8">
+        <img alt="App eCard showcase" class="w-full h-auto rounded-3xl shadow-xl border-4 border-white ring-1 ring-stone-900/10 transition-transform duration-500 hover:scale-[1.02]" src="hero_3.jpg">
+        <img alt="Previous app version comparison" class="w-full h-auto rounded-3xl shadow-xl border-4 border-white ring-1 ring-stone-900/10 transition-transform duration-500 hover:scale-[1.02]" src="hero_1.jpg">
+        <img alt="App interface showcase" class="w-full h-auto rounded-3xl shadow-xl border-4 border-white ring-1 ring-stone-900/10 transition-transform duration-500 hover:scale-[1.02]" src="hero_2.jpg">
+    </div>
+
+    <!-- Desktop 3D Stack (Hidden on Mobile) -->
+    <div class="hidden lg:flex flex-1 relative w-full justify-center items-center py-20 h-[600px] perspective-1000 -translate-x-16">
+        <!-- Left Phone (hero_2.jpg) -->
+        <div class="absolute left-1/2 -translate-x-[130%] bottom-12 w-48 h-[400px] z-10 transform -rotate-12 transition-all duration-700 hover:rotate-[-6deg] hover:-translate-y-8 hover:scale-110 hover:z-30 cursor-pointer">
+            <img alt="Previous app version comparison" class="w-full h-full object-cover rounded-[2.5rem] shadow-xl border-4 border-white ring-1 ring-stone-900/20 bg-white" src="hero_2.jpg">
+        </div>
+        <!-- Right Phone (hero_1.jpg) -->
+        <div class="absolute left-1/2 translate-x-[30%] bottom-20 w-48 h-[400px] z-10 transform rotate-12 transition-all duration-700 hover:rotate-[6deg] hover:-translate-y-8 hover:scale-110 hover:z-30 cursor-pointer">
+            <img alt="App eCard showcase" class="w-full h-full object-cover rounded-[2.5rem] shadow-xl border-4 border-white ring-1 ring-stone-900/20 bg-white" src="hero_1.jpg">
+        </div>
+        <!-- Center Phone (hero_3.jpg) -->
+        <div class="relative z-20 w-56 h-[440px] transform transition-all duration-700 hover:-translate-y-8 hover:scale-105 cursor-pointer">
+            <img alt="App home screen" class="w-full h-full object-cover rounded-[3rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] border-[12px] border-white ring-1 ring-stone-900/30 bg-white" src="hero_3.jpg">
+            <!-- Glossy Overlay -->
+            <div class="absolute inset-0 rounded-[3rem] bg-gradient-to-tr from-white/20 to-transparent ring-1 ring-inset ring-white/10 pointer-events-none"></div>
+        </div>
+    </div>
 </section>
 <!-- Stats Bar -->
 <section class="bg-surface-container-low py-12 px-8">
@@ -163,18 +171,18 @@
 <!-- Row 1 -->
 <div class="flex flex-col lg:flex-row items-center gap-16">
 <div class="flex-1 space-y-6">
-<h2 class="text-4xl md:text-5xl font-headline leading-tight" style="">Create masterpieces <br>in <span class="serif-italic" style="">seconds</span>.</h2>
+<h2 class="text-4xl md:text-5xl font-headline leading-tight" style="">Discover beautifully curated cards for every occasion</h2>
 <p class="text-lg text-on-surface-variant leading-relaxed" style="">
-                            Our intuitive editor allows you to transform any card into a digital masterpiece. Choose from hundreds of curated fonts and high-resolution embellishments.
+                            Explore a diverse collection of beautifully designed cards for every occasion. Find, customize, and share the perfect card effortlessly.
                         </p>
 <ul class="space-y-4">
 <li class="flex items-start gap-3" style="">
 <span class="material-symbols-outlined text-primary" data-icon="check_circle" style="">check_circle</span>
-<span class="text-sm font-bold" style="">Drag-and-drop elements</span>
+<span class="text-sm font-bold" style="">Easy personalization in just a few taps</span>
 </li>
 <li class="flex items-start gap-3" style="">
 <span class="material-symbols-outlined text-primary" data-icon="check_circle" style="">check_circle</span>
-<span class="text-sm font-bold" style="">Live real-time preview</span>
+<span class="text-sm font-bold" style="">Preview before you send</span>
 </li>
 </ul>
 </div>
@@ -220,11 +228,11 @@
         </div>
 
         <!-- Right Content Side -->
-        <div class="w-full lg:w-1/2 relative z-10 p-12 lg:p-20 flex flex-col justify-center gap-10 bg-white">
+        <div class="w-full lg:w-1/2 relative z-10 p-8 sm:p-10 lg:p-20 flex flex-col justify-center gap-10 bg-white">
             <div class="space-y-6">
                 <!-- Modern Headline -->
-                <h2 class="text-5xl md:text-6xl font-headline text-stone-900 leading-[1.05] tracking-tight">
-                    Celebrate Every Moment, <span class="font-serif italic text-primary"><br/>Uninterrupted.</span>
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-headline text-stone-900 leading-[1.05] tracking-tight break-words">
+                    Celebrate Every Moment, <span class="font-serif italic text-primary"><br class="hidden md:block"/>Uninterrupted</span>
                 </h2>
                 
                 <!-- Delicate Body Copy -->
