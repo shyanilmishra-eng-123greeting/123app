@@ -14,9 +14,9 @@
 <!-- TopAppBar Navigation -->
 <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-stone-200/50 transition-all duration-300">
 <div class="flex justify-between items-center px-8 lg:px-24 py-4 w-full">
-<div class="flex items-center h-12 hover:opacity-80 transition-opacity">
+<div class="flex items-center h-16 hover:opacity-80 transition-opacity">
 <a href="index.html" class="h-full flex items-center">
-<img alt="123Greetings Logo" class="h-10 w-auto object-contain" src="LOGO.png">
+<img alt="123Greetings Logo" class="h-14 w-auto object-contain" src="LOGO.png">
 </a>
 </div>
 <div class="hidden md:flex items-center gap-8 bg-stone-100/50 hover:bg-stone-100 transition-colors px-8 py-2.5 rounded-full border border-stone-200/50 shadow-sm">
@@ -45,12 +45,31 @@
 <a href="https://play.google.com/store/apps/details?id=com.g123" class="transition-all duration-300 hover:scale-110 hover:-translate-y-1 active:scale-95"><img alt="Get it on Google Play" class="h-14 w-auto object-contain drop-shadow-xl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png"></a>
 </div>
 </div>
-    <!-- Mobile Image Stack (Hidden on Desktop) -->
-    <div class="flex lg:hidden flex-col items-center gap-8 w-full max-w-sm mx-auto py-8">
-        <img alt="App eCard showcase" class="w-full h-auto rounded-3xl shadow-xl border-4 border-white ring-1 ring-stone-900/10 transition-transform duration-500 hover:scale-[1.02]" src="hero_3.jpg">
-        <img alt="Previous app version comparison" class="w-full h-auto rounded-3xl shadow-xl border-4 border-white ring-1 ring-stone-900/10 transition-transform duration-500 hover:scale-[1.02]" src="hero_1.jpg">
-        <img alt="App interface showcase" class="w-full h-auto rounded-3xl shadow-xl border-4 border-white ring-1 ring-stone-900/10 transition-transform duration-500 hover:scale-[1.02]" src="hero_2.jpg">
+    <!-- Mobile Hero Stack (3D Pattern) -->
+    <div class="lg:hidden relative h-[460px] w-full max-w-sm mx-auto mt-8 mb-16 px-4">
+        <!-- Center Phone (Hero 3) -->
+        <div class="absolute left-1/2 top-4 -translate-x-1/2 w-52 z-30 transition-all duration-700">
+            <div class="relative aspect-[738/1600] rounded-[2.5rem] overflow-hidden border-4 border-white shadow-2xl bg-white ring-1 ring-stone-900/10">
+                <img src="hero_3.jpg" alt="App home screen" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent pointer-events-none"></div>
+            </div>
+        </div>
+
+        <!-- Left Phone (Hero 1) -->
+        <div class="absolute left-4 top-16 w-36 z-20 -rotate-12 transition-all duration-700 opacity-90">
+            <div class="relative aspect-[738/1600] rounded-[2rem] overflow-hidden border-2 border-white shadow-xl bg-white ring-1 ring-stone-900/10">
+                <img src="hero_1.jpg" alt="App Preview 1" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <!-- Right Phone (Hero 2) -->
+        <div class="absolute right-4 top-16 w-36 z-20 rotate-12 transition-all duration-700 opacity-90">
+            <div class="relative aspect-[738/1600] rounded-[2rem] overflow-hidden border-2 border-white shadow-xl bg-white ring-1 ring-stone-900/10">
+                <img src="hero_2.jpg" alt="App Preview 2" class="w-full h-full object-cover">
+            </div>
+        </div>
     </div>
+
 
     <!-- Desktop 3D Stack (Hidden on Mobile) -->
     <div class="hidden lg:flex flex-1 relative w-full justify-center items-center py-20 h-[600px] perspective-1000 -translate-x-16">
@@ -92,34 +111,101 @@
 </div>
 </section>
 <!-- Features Bento Grid -->
-<section id="features" class="px-8 lg:px-24 py-32 space-y-20 relative">
-<div class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-8 relative">
-    <h2 class="text-5xl md:text-7xl lg:text-[5.5rem] font-headline text-stone-900 leading-[1.05] tracking-tight">
-        Stop sending forgettable texts. <br class="hidden md:block"/>
-        Start sending
-        <span class="relative inline-block mt-2 md:mt-4 whitespace-nowrap">
-            <span class="relative z-10 font-serif italic text-primary pr-2">moments.</span>
-            <svg class="absolute -bottom-1 md:-bottom-2 left-0 w-full h-4 md:h-6 text-primary/10 -z-10" viewBox="0 0 300 24" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                <path d="M2 20C98 -4 200 -4 298 20" stroke="currentColor" stroke-width="12" stroke-linecap="round"/>
-            </svg>
-        </span>
-    </h2>
-    
-    <p class="text-xl md:text-2xl text-stone-500 font-body max-w-2xl font-light leading-relaxed pt-2">
-        Everything you need to show up for the people you love — 30,000+ handpicked cards, no interruptions, smart reminders, and quick sending. Unlock the full power with Pro.
-    </p>
+<!-- Features & Categories Section -->
+<section id="features" class="relative py-24 lg:py-32 overflow-hidden bg-stone-50/30">
+    <!-- Decorative background blobs -->
+    <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 animate-float"></div>
+    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-tertiary/5 rounded-full blur-[120px] translate-x-1/2 translate-y-1/2 animate-float-reverse"></div>
 
-    <div class="w-px h-16 md:h-24 bg-gradient-to-b from-stone-300 via-stone-200 to-transparent mt-8"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
+    <div class="relative px-8 lg:px-24">
+        <!-- Headline Section -->
+        <div class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-4 mb-12 lg:mb-16">
+            <h2 class="text-4xl md:text-6xl lg:text-7xl font-headline text-stone-900 leading-[1.1] tracking-tight">
+                Ecards for <span class="serif-italic text-primary">Every Occasion</span>
+            </h2>
+            
+            <p class="text-lg md:text-xl text-stone-500 font-body max-w-2xl font-light leading-relaxed">
+                From birthdays to holidays, find the perfect ecard waiting for you.
+            </p>
+        </div>
+
+        <!-- Occasions Grid (3x2 Layout) -->
+        <div class="max-w-5xl mx-auto mb-32 px-4 sm:px-0">
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                <!-- Birthday -->
+                <div class="group cursor-pointer relative">
+                    <div class="relative aspect-square md:aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden premium-shadow transition-all duration-700 group-hover:-translate-y-3 premium-shadow-hover">
+                        <img src="popular_categorie.jpeg" alt="Birthday" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                        <div class="absolute inset-x-2 bottom-2 md:inset-x-4 md:bottom-4 glass-label py-2 px-1 md:p-4 rounded-xl md:rounded-2xl flex items-center justify-center border border-white/40 shadow-xl backdrop-blur-md">
+                            <span class="text-stone-900 font-headline text-base md:text-xl font-bold text-center">Birthday</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anniversary -->
+                <div class="group cursor-pointer relative">
+                    <div class="relative aspect-square md:aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden premium-shadow transition-all duration-700 group-hover:-translate-y-3 premium-shadow-hover">
+                        <img src="Anniversary.jpeg" alt="Anniversary" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                        <div class="absolute inset-x-2 bottom-2 md:inset-x-4 md:bottom-4 glass-label py-2 px-1 md:p-4 rounded-xl md:rounded-2xl flex items-center justify-center border border-white/40 shadow-xl backdrop-blur-md">
+                            <span class="text-stone-900 font-headline text-base md:text-xl font-bold text-center">Anniversary</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thank You -->
+                <div class="group cursor-pointer relative">
+                    <div class="relative aspect-square md:aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden premium-shadow transition-all duration-700 group-hover:-translate-y-3 premium-shadow-hover">
+                        <img src="ThankYou.jpeg" alt="Thank You" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                        <div class="absolute inset-x-2 bottom-2 md:inset-x-4 md:bottom-4 glass-label py-2 px-1 md:p-4 rounded-xl md:rounded-2xl flex items-center justify-center border border-white/40 shadow-xl backdrop-blur-md">
+                            <span class="text-stone-900 font-headline text-sm md:text-xl font-bold text-center">Thank You</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Get Well Soon -->
+                <div class="group cursor-pointer relative">
+                    <div class="relative aspect-square md:aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden premium-shadow transition-all duration-700 group-hover:-translate-y-3 premium-shadow-hover">
+                        <img src="GetWellsoon.jpeg" alt="Get Well Soon" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                        <div class="absolute inset-x-2 bottom-2 md:inset-x-4 md:bottom-4 glass-label py-2 px-1 md:p-4 rounded-xl md:rounded-2xl flex items-center justify-center border border-white/40 shadow-xl backdrop-blur-md">
+                            <span class="text-stone-900 font-headline text-sm md:text-xl font-bold text-center leading-tight">Get Well Soon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Valentine -->
+                <div class="group cursor-pointer relative">
+                    <div class="relative aspect-square md:aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden premium-shadow transition-all duration-700 group-hover:-translate-y-3 premium-shadow-hover">
+                        <img src="HAppyValentinesDay.jpeg" alt="Valentine's Day" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                        <div class="absolute inset-x-2 bottom-2 md:inset-x-4 md:bottom-4 glass-label py-2 px-1 md:p-4 rounded-xl md:rounded-2xl flex items-center justify-center border border-white/40 shadow-xl backdrop-blur-md">
+                            <span class="text-stone-900 font-headline text-sm md:text-xl font-bold text-center leading-tight">Valentine's Day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Christmas -->
+                <div class="group cursor-pointer relative">
+                    <div class="relative aspect-square md:aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden premium-shadow transition-all duration-700 group-hover:-translate-y-3 premium-shadow-hover">
+                        <img src="popular_categories2.jpeg" alt="Christmas" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                        <div class="absolute inset-x-2 bottom-2 md:inset-x-4 md:bottom-4 glass-label py-2 px-1 md:p-4 rounded-xl md:rounded-2xl flex items-center justify-center border border-white/40 shadow-xl backdrop-blur-md">
+                            <span class="text-stone-900 font-headline text-base md:text-xl font-bold text-center">Christmas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Features Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
 <!-- Card 1: Smart Reminders -->
-<div class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between aspect-square md:aspect-auto">
+<div class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between min-h-[220px]">
 <span class="material-symbols-outlined text-4xl text-primary" data-icon="notifications_active" style="">notifications_active</span>
 <div class="space-y-2">
 <h3 class="text-xl font-bold font-headline" style="">Smart Reminders</h3>
-<p class="text-sm text-on-surface-variant" style="">Never forget birthdays or anniversaries with our intelligent notification system that syncs with your life.</p>
+<p class="text-sm text-on-surface-variant leading-relaxed" style="">Never forget birthdays or anniversaries with our intelligent notification system that syncs with your life.</p>
 </div>
 </div>
+
 <!-- Card 2: Send to Multiple -->
 <div class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between">
 <span class="material-symbols-outlined text-4xl text-tertiary" data-icon="group_add" style="">group_add</span>
@@ -165,59 +251,122 @@
 </div>
 </div>
 </section>
+<!-- How To Send Section -->
+<section class="py-24 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-8 lg:px-24">
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-20 md:mb-24">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-headline text-stone-900 leading-tight">
+                How To <span class="serif-italic text-primary">Send An Ecard</span>
+            </h2>
+            <p class="text-lg md:text-xl text-stone-500 font-light leading-relaxed">
+                Sending heartfelt greetings has never been easier. Just three simple steps to spread joy.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 relative">
+            <!-- Decorative connection line for desktop -->
+            <div class="hidden md:block absolute top-20 left-[18%] right-[18%] h-px bg-stone-200 -z-10"></div>
+            
+            <!-- Step 1 -->
+            <div class="relative group text-center md:text-left bg-stone-50/80 border border-stone-100 rounded-3xl px-6 py-8 md:px-8 md:py-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                <div class="absolute top-4 right-6 text-xs font-bold tracking-[0.3em] text-stone-300 group-hover:text-primary/40 transition-colors duration-300 select-none">01</div>
+                <div class="relative space-y-4 md:space-y-5">
+                    <div class="w-14 h-14 md:w-16 md:h-16 mx-auto md:mx-0 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shadow-sm">
+                        <span class="material-symbols-outlined text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">style</span>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold font-headline text-stone-900 group-hover:text-primary transition-colors duration-300 tracking-tight">Choose Your Ecard</h3>
+                    <p class="text-stone-500 text-sm md:text-base leading-relaxed font-light">Browse through thousands of beautiful ecards for every occasion and holiday.</p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative group text-center md:text-left bg-stone-50/80 border border-stone-100 rounded-3xl px-6 py-8 md:px-8 md:py-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                <div class="absolute top-4 right-6 text-xs font-bold tracking-[0.3em] text-stone-300 group-hover:text-primary/40 transition-colors duration-300 select-none">02</div>
+                <div class="relative space-y-4 md:space-y-5">
+                    <div class="w-14 h-14 md:w-16 md:h-16 mx-auto md:mx-0 rounded-2xl bg-tertiary/10 text-tertiary flex items-center justify-center shadow-sm">
+                        <span class="material-symbols-outlined text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">draw</span>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold font-headline text-stone-900 group-hover:text-primary transition-colors duration-300 tracking-tight">Personalize It</h3>
+                    <p class="text-stone-500 text-sm md:text-base leading-relaxed font-light">Add your personal message and customize the ecard to make it uniquely yours.</p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative group text-center md:text-left bg-stone-50/80 border border-stone-100 rounded-3xl px-6 py-8 md:px-8 md:py-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                <div class="absolute top-4 right-6 text-xs font-bold tracking-[0.3em] text-stone-300 group-hover:text-primary/40 transition-colors duration-300 select-none">03</div>
+                <div class="relative space-y-4 md:space-y-5">
+                    <div class="w-14 h-14 md:w-16 md:h-16 mx-auto md:mx-0 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center shadow-sm">
+                        <span class="material-symbols-outlined text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">send</span>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold font-headline text-stone-900 group-hover:text-primary transition-colors duration-300 tracking-tight">Send Instantly</h3>
+                    <p class="text-stone-500 text-sm md:text-base leading-relaxed font-light">Share via email, WhatsApp, Facebook or any social platform in seconds.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tagline -->
+        <div class="mt-24 pt-12 border-t border-stone-100 text-center">
+            <p class="text-2xl font-headline text-stone-400 font-light">
+                Discover <span class="serif-italic text-stone-900">beautifully crafted</span> cards
+            </p>
+        </div>
+    </div>
+</section>
 <!-- App Showcase Rows -->
-<section id="occasions" class="px-8 lg:px-24 py-24 bg-white">
-<div class="max-w-7xl mx-auto space-y-32">
+<section id="occasions" class="px-6 md:px-24 py-16 md:py-24 bg-white">
+<div class="max-w-7xl mx-auto space-y-24 md:space-y-32">
 <!-- Row 1 -->
-<div class="flex flex-col lg:flex-row items-center gap-16">
-<div class="flex-1 space-y-6">
-<h2 class="text-4xl md:text-5xl font-headline leading-tight" style="">Discover beautifully curated cards for every occasion</h2>
-<p class="text-lg text-on-surface-variant leading-relaxed" style="">
+<div class="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
+<div class="flex-1 space-y-6 text-center lg:text-left">
+<h2 class="text-3xl md:text-5xl font-headline leading-tight">Discover beautifully curated cards for every occasion</h2>
+<p class="text-base md:text-lg text-on-surface-variant leading-relaxed">
                             Explore a diverse collection of beautifully designed cards for every occasion. Find, customize, and share the perfect card effortlessly.
                         </p>
-<ul class="space-y-4">
-<li class="flex items-start gap-3" style="">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="">check_circle</span>
-<span class="text-sm font-bold" style="">Easy personalization in just a few taps</span>
+<ul class="space-y-4 inline-block lg:block text-left">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="text-sm md:text-base font-bold">Easy personalization in just a few taps</span>
 </li>
-<li class="flex items-start gap-3" style="">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="">check_circle</span>
-<span class="text-sm font-bold" style="">Preview before you send</span>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="text-sm md:text-base font-bold">Preview before you send</span>
 </li>
 </ul>
 </div>
-<div class="flex-1">
-<div class="bg-surface-container-low rounded-lg p-12 flex justify-center">
-<img alt="App interface" class="rounded-[2rem] shadow-2xl w-full max-w-[280px] mx-auto object-cover border-8 border-stone-800 transition-all duration-500 hover:-translate-y-4 hover:scale-105 hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]" src="main2.jpg">
+<div class="flex-1 w-full max-w-sm lg:max-w-none">
+<div class="bg-surface-container-low rounded-2xl md:rounded-lg p-8 md:p-12 flex justify-center">
+<img alt="App interface" class="rounded-[2.5rem] shadow-2xl w-full max-w-[260px] md:max-w-[280px] mx-auto object-cover border-8 border-stone-800 transition-all duration-500 hover:-translate-y-4 hover:scale-105" src="main2.jpg">
 </div>
 </div>
 </div>
 <!-- Row 2 -->
-<div class="flex flex-col lg:flex-row-reverse items-center gap-16">
-<div class="flex-1 space-y-6">
-<h2 class="text-4xl md:text-5xl font-headline leading-tight" style="">Schedule now, <br>send <span class="serif-italic" style="">later</span>.</h2>
-<p class="text-lg text-on-surface-variant leading-relaxed" style="">
+<div class="flex flex-col lg:flex-row-reverse items-center gap-12 md:gap-16">
+<div class="flex-1 space-y-6 text-center lg:text-left">
+<h2 class="text-3xl md:text-5xl font-headline leading-tight">Schedule now, <br>send <span class="serif-italic">later</span>.</h2>
+<p class="text-base md:text-lg text-on-surface-variant leading-relaxed">
                             Life gets busy. Plan your entire year of celebrations in one afternoon. Our automated delivery system ensures your warm wishes land exactly when they should.
                         </p>
-<ul class="space-y-4">
-<li class="flex items-start gap-3" style="">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="">check_circle</span>
-<span class="text-sm font-bold" style="">Auto-delivery at precise times</span>
+<ul class="space-y-4 inline-block lg:block text-left">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="text-sm md:text-base font-bold">Auto-delivery at precise times</span>
 </li>
-<li class="flex items-start gap-3" style="">
-<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="">check_circle</span>
-<span class="text-sm font-bold" style="">Easy-to-manage sending queue</span>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="text-sm md:text-base font-bold">Easy-to-manage sending queue</span>
 </li>
 </ul>
 </div>
-<div class="flex-1">
-<div class="bg-surface-container-low rounded-lg p-12 flex justify-center">
-<img alt="Scheduling feature" class="rounded-[2rem] shadow-2xl w-full max-w-[280px] mx-auto object-cover border-8 border-stone-800 transition-all duration-500 hover:-translate-y-4 hover:scale-105 hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]" src="main.jpg">
+<div class="flex-1 w-full max-w-sm lg:max-w-none">
+<div class="bg-surface-container-low rounded-2xl md:rounded-lg p-8 md:p-12 flex justify-center">
+<img alt="Scheduling feature" class="rounded-[2.5rem] shadow-2xl w-full max-w-[260px] md:max-w-[280px] mx-auto object-cover border-8 border-stone-800 transition-all duration-500 hover:-translate-y-4 hover:scale-105" src="main.jpg">
 </div>
 </div>
 </div>
 </div>
 </section>
+
 <!-- PRO Section -->
 <section id="pro" class="max-w-7xl mx-auto px-8 lg:px-24 my-24 lg:my-32">
     <div class="relative rounded-[2.5rem] overflow-hidden shadow-[0_30px_80px_-20px_rgba(0,0,0,0.08)] bg-white border border-stone-200/60 group flex flex-col lg:flex-row">
@@ -241,14 +390,20 @@
                 </p>
             </div>
             
-            <!-- Pricing & CTA -->
-            <div class="pt-8 border-t border-stone-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-                <div>
-                    <div class="text-4xl font-headline text-stone-900 font-semibold">Only $5.99 <span class="text-sm font-sans text-stone-400 font-normal">/ year</span></div>
+            <!-- Pricing & Availability -->
+            <div class="pt-8 border-t border-stone-200 flex flex-col gap-6">
+                <div class="text-4xl font-headline text-stone-900 font-semibold">Only $5.99 <span class="text-sm font-sans text-stone-400 font-normal">/ year</span></div>
+                <div class="inline-flex items-start gap-4 self-start rounded-2xl border border-stone-200 bg-stone-50 px-5 py-4 shadow-sm">
+                    <div class="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="text-sm font-bold uppercase tracking-[0.18em] text-stone-400">Available In App</p>
+                        <p class="text-base text-stone-700 leading-relaxed">
+                            Upgrade to PRO from the iOS or Android app for an ad-free experience and exclusive card collections.
+                        </p>
+                    </div>
                 </div>
-                <button class="px-8 py-4 bg-stone-900 text-white rounded-full font-bold shadow-xl shadow-stone-200 hover:bg-primary hover:text-white transition-all duration-300 hover:scale-105 active:scale-95 whitespace-nowrap">
-                    Join PRO Today
-                </button>
             </div>
         </div>
         
@@ -389,67 +544,103 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full py-16 bg-stone-100 dark:bg-stone-900 border-t border-stone-200 dark:border-stone-800">
-<div class="px-8 lg:px-24 max-w-7xl mx-auto space-y-12">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-<div>
-<h4 class="font-bold text-stone-900 dark:text-stone-100 mb-4 uppercase tracking-wider text-sm">Services</h4>
-<ul class="space-y-3">
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://www.123greetings.com/connect/birthdays">B'day Reminders</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://www.123greetings.com/connect/events/">Event Reminders</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://lettucelebrate.com/">Newsletter</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://widgets.123greetings.com/">Widgets</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-stone-900 dark:text-stone-100 mb-4 uppercase tracking-wider text-sm">Company</h4>
-<ul class="space-y-3">
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://info.123greetings.com/company/pressroom/">Press Room</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://www.123greetings.com/app">Mobile App</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://www.123greetings.com/rss/">RSS Feed</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://www.123greetings.com/sitemap.html">Site Map</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-stone-900 dark:text-stone-100 mb-4 uppercase tracking-wider text-sm">Legal</h4>
-<ul class="space-y-3">
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://www.123greetings.com/terms_of_use.html">Terms of Use</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://www.123greetings.com/privacy_policy.html">Privacy Policy</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://www.123greetings.com/cookie_policy.html">Cookie Policy</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://www.123greetings.com/copyright_policy.html">Copyright/IP Policy</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-stone-900 dark:text-stone-100 mb-4 uppercase tracking-wider text-sm">Support</h4>
-<ul class="space-y-3">
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://help.123greetings.com/">Help Center</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://help.123greetings.com/contact_us.html">Contact Us</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://www.123greetings.com/connect/optin">Request Opt-In</a></li>
-<li><a class="text-stone-500 hover:text-primary transition-colors text-sm" href="https://www.123greetings.com/connect/optout">Do Not Sell My Info</a></li>
-</ul>
-</div>
-</div>
-<div class="pt-8 border-t border-stone-200 dark:border-stone-800 flex flex-col md:flex-row justify-between items-center gap-6">
-<img alt="123Greetings Logo" class="h-8 w-auto object-contain grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300" src="LOGO.png">
-<div class="flex flex-col md:flex-row items-center gap-4">
-    <span class="text-xs font-bold text-stone-900 dark:text-stone-100 uppercase tracking-[0.2em]">Stay Connected:</span>
-    <div class="flex items-center gap-5">
-        <a href="https://www.facebook.com/123GreetingsCom" class="text-stone-400 hover:text-[#1877F2] transition-colors" aria-label="Facebook">
-            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-        </a>
-        <a href="https://www.instagram.com/123greetings/" class="text-stone-400 hover:text-[#E4405F] transition-colors" aria-label="Instagram">
-            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
-        </a>
-        <a href="https://x.com/123GreetingsCom" class="text-stone-400 hover:text-stone-900 dark:hover:text-white transition-colors" aria-label="X (Twitter)">
-            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" /></svg>
-        </a>
-        <a href="https://www.pinterest.com/123greetings/" class="text-stone-400 hover:text-[#E60023] transition-colors" aria-label="Pinterest">
-            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.168 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.367 18.625 0 12.017 0z" clip-rule="evenodd" /></svg>
-        </a>
+<footer class="w-full py-12 bg-stone-50 border-t border-stone-200">
+    <div class="px-8 lg:px-24 max-w-7xl mx-auto flex flex-col items-center space-y-8">
+        
+        <!-- Social Media Row -->
+        <div class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+            <span class="text-sm font-medium text-stone-600">Stay Connected:</span>
+            <div class="flex items-center gap-3">
+                <a href="https://www.facebook.com/123GreetingsCom" class="w-10 h-10 rounded-full bg-[#1877f2] text-white flex items-center justify-center transition-transform hover:scale-110 no-underline" aria-label="Facebook">
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" /></svg>
+                </a>
+                <a href="https://x.com/123GreetingsCom" class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center transition-transform hover:scale-110 no-underline" aria-label="X (Twitter)">
+                    <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" /></svg>
+                </a>
+                <a href="https://www.pinterest.com/123greetings/" class="w-10 h-10 rounded-full bg-[#E60023] text-white flex items-center justify-center transition-transform hover:scale-110 no-underline" aria-label="Pinterest">
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.168 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.367 18.625 0 12.017 0z" /></svg>
+                </a>
+                <a href="https://www.instagram.com/123greetings/" class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] text-white flex items-center justify-center transition-transform hover:scale-110 no-underline" aria-label="Instagram">
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" /></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-full h-px bg-stone-200"></div>
+
+        <!-- Primary Nav Row -->
+        <div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+            <a href="https://www.123greetings.com/connect/birthdays" class="text-stone-700 hover:text-primary font-medium text-sm no-underline">B'day Reminders</a>
+            <a href="https://www.123greetings.com/connect/events/" class="text-stone-700 hover:text-primary font-medium text-sm no-underline">Event Reminders</a>
+            <a href="https://lettucelebrate.com/" class="text-stone-700 hover:text-primary font-medium text-sm no-underline">Newsletter</a>
+        </div>
+
+        <div class="w-full h-px bg-stone-200"></div>
+
+        <!-- Secondary Nav (Pipe Separated) -->
+        <div class="flex flex-wrap justify-center items-center text-stone-500 text-xs gap-y-3 px-4">
+            <a href="https://www.123greetings.com/sitemap.html" class="hover:text-primary no-underline transition-colors px-2">Site Map</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://www.123greetings.com/connect" class="hover:text-primary no-underline transition-colors px-2">Connect</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://www.123greetings.com/app" class="hover:text-primary no-underline transition-colors px-2">Mobile App</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://info.123greetings.com/company/pressroom/" class="hover:text-primary no-underline transition-colors px-2">Press Room</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://widgets.123greetings.com/" class="hover:text-primary no-underline transition-colors px-2">Widgets</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://www.123greetings.com/rss/" class="hover:text-primary no-underline transition-colors px-2">RSS Feed</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://www.123greetings.com/terms_of_use.html" class="hover:text-primary no-underline transition-colors px-2">Terms of Use</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://www.123greetings.com/privacy_policy.html" class="hover:text-primary no-underline transition-colors px-2">Privacy Policy</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://www.123greetings.com/cookie_policy.html" class="hover:text-primary no-underline transition-colors px-2">Cookie Policy</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://www.123greetings.com/copyright_policy.html" class="hover:text-primary no-underline transition-colors px-2">Copyright/IP Policy</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://www.123greetings.com/connect/optout" class="hover:text-primary no-underline transition-colors px-2">Do Not Sell My Info</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://www.123greetings.com/connect/optin" class="hover:text-primary no-underline transition-colors px-2">Request Opt-In</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://help.123greetings.com/" class="hover:text-primary no-underline transition-colors px-2">Help</a>
+            <span class="text-stone-300">|</span>
+            <a href="https://help.123greetings.com/contact_us.html" class="hover:text-primary no-underline transition-colors px-2">Contact Us</a>
+        </div>
+
+        <div class="pt-4 text-center">
+            <p class="text-stone-400 text-xs">Copyright © 123Greetings.com, Inc. All rights reserved.</p>
+        </div>
     </div>
-</div>
-<p class="text-stone-400 text-sm font-body text-center md:text-right">© 2026 123Greetings. All rights reserved.</p>
-</div>
-</div>
 </footer>
+<script>
+    // Simple logic for the mobile menu
+    const menuBtn = document.querySelector('button.md\\:hidden');
+    const mobileMenu = document.createElement('div');
+    mobileMenu.className = 'fixed inset-0 bg-white z-[60] pt-24 px-8 hidden flex flex-col gap-8';
+    mobileMenu.innerHTML = `
+        <button class="absolute top-6 right-8 p-2 text-stone-700">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+        <a class="text-2xl font-headline font-bold text-stone-900 border-b border-stone-100 pb-4" href="#features">Features</a>
+        <a class="text-2xl font-headline font-bold text-stone-900 border-b border-stone-100 pb-4" href="#occasions">Occasions</a>
+        <a class="text-2xl font-headline font-bold text-stone-900 border-b border-stone-100 pb-4" href="#reviews">Reviews</a>
+        <a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white rounded-full font-label text-base font-bold uppercase tracking-wider mt-4" href="#pro">Go Pro Today</a>
+    `;
+    document.body.appendChild(mobileMenu);
+
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+    }
+
+    mobileMenu.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.style.overflow = '';
+        });
+    });
+</script>
 </body></html>

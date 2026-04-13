@@ -3,6 +3,32 @@
 }
 .serif-italic { font-style: italic; }
 .no-scrollbar::-webkit-scrollbar { display: none; }
+.glass-label {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.premium-shadow {
+    box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.1);
+}
+.premium-shadow-hover:hover {
+    box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.2);
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+.animate-float {
+    animation: float 10s ease-in-out infinite;
+}
+@keyframes float-reverse {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+}
+.animate-float-reverse {
+    animation: float-reverse 12s ease-in-out infinite;
+}
 @keyframes shine {
     to { background-position: 200% center; }
 }
