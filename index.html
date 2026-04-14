@@ -16,33 +16,71 @@
 <div class="flex justify-between items-center px-8 lg:px-24 py-4 w-full">
 <div class="flex items-center h-16 hover:opacity-80 transition-opacity">
 <a href="index.html" class="h-full flex items-center">
-<img alt="123Greetings Logo" class="h-14 w-auto object-contain" src="LOGO.png">
+<img alt="123Greetings Logo" class="h-16 w-auto object-contain" src="LOGO.png">
 </a>
 </div>
 <div class="hidden md:flex items-center gap-8 bg-stone-100/50 hover:bg-stone-100 transition-colors px-8 py-2.5 rounded-full border border-stone-200/50 shadow-sm">
-<a class="text-stone-600 hover:text-primary transition-colors font-label text-sm font-bold uppercase tracking-wide" href="#features">Features</a>
-<a class="text-stone-600 hover:text-primary transition-colors font-label text-sm font-bold uppercase tracking-wide" href="#occasions">Occasions</a>
-<a class="text-stone-600 hover:text-primary transition-colors font-label text-sm font-bold uppercase tracking-wide" href="#reviews">Reviews</a>
+<a class="text-stone-600 hover:text-primary transition-all duration-200 font-label text-sm font-bold uppercase tracking-wide border-b-2 border-transparent pb-1" href="#features">Features</a>
+<a class="text-stone-600 hover:text-primary transition-all duration-200 font-label text-sm font-bold uppercase tracking-wide border-b-2 border-transparent pb-1" href="#occasions">Occasions</a>
+<a class="text-stone-600 hover:text-primary transition-all duration-200 font-label text-sm font-bold uppercase tracking-wide border-b-2 border-transparent pb-1" href="#reviews">Reviews</a>
 </div>
 <div class="flex items-center gap-4">
-<a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary text-white hover:bg-[#93000f] rounded-full font-label text-sm font-bold uppercase tracking-wider transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/30 active:translate-y-0 active:shadow-md" href="#pro">Go Pro</a>
+<a class="hidden md:inline-flex items-center justify-center px-5 py-2 bg-gradient-to-r from-[#DC1F26] via-[#E33A3E] to-[#B11F24] text-white rounded-full font-label text-sm font-semibold uppercase tracking-wider shadow-sm hover:shadow-md transition-all duration-300" href="#pro">Start Sending Moments</a>
 <button class="p-2 hover:bg-stone-100 text-stone-700 rounded-full md:hidden transition-colors">
 <span class="material-symbols-outlined">menu</span>
 </button>
 </div>
 </div>
+<div class="absolute left-0 right-0 bottom-0 h-1 bg-red-100 overflow-hidden pointer-events-none">
+<div id="scrollProgress" class="h-full w-full origin-left scale-x-0 bg-gradient-to-r from-[#DC1F26] via-[#E33A3E] to-[#B11F24] transition-transform duration-150"></div>
+</div>
 </nav>
 <main class="pt-20 overflow-x-hidden">
 <!-- Hero Section -->
 <section class="relative px-8 lg:px-24 pt-8 pb-16 lg:pt-12 lg:pb-32 flex flex-col lg:flex-row items-center gap-16 overflow-hidden">
-<div class="flex-1 space-y-8 z-10 flex flex-col items-center text-center lg:items-start lg:text-left">
+<div class="flex-1 space-y-8 z-10 flex flex-col items-center text-center lg:items-start lg:text-left lg:pr-20">
 <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-tertiary-fixed text-on-tertiary-fixed rounded-full text-xs uppercase tracking-widest self-center lg:self-start font-sans font-semibold">
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>TRUSTED BY MILLIONS WORLDWIDE</div>
-<h1 class="text-5xl md:text-6xl lg:text-7xl font-headline leading-[1.1] text-on-surface">Meaningful Greetings, <br><em class="text-[#DC1F26] italic font-serif">Made</em><br><em class="text-[#DC1F26] italic font-serif">Effortless</em></h1>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-lg leading-relaxed mx-auto lg:mx-0">Find ecards for birthdays, anniversaries, holidays, and every moment that matters.</p>
+<h1 class="text-5xl md:text-6xl lg:text-7xl font-headline leading-[1.05] text-on-surface">
+    Say it the moment <br>
+    you <span class="text-[#DC1F26] italic font-serif">feel it.</span>
+</h1>
+
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mx-auto lg:mx-0">
+    No overthinking. No delays. Just pick, personalize, and send in seconds.
+</p>
+
 <div class="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start">
-<a href="https://apps.apple.com/in/app/greeting-cards-wishes/id718873921" class="transition-all duration-300 hover:scale-110 hover:-translate-y-1 active:scale-95"><img alt="Download on the App Store" class="h-14 w-auto object-contain drop-shadow-xl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png"></a>
-<a href="https://play.google.com/store/apps/details?id=com.g123" class="transition-all duration-300 hover:scale-110 hover:-translate-y-1 active:scale-95"><img alt="Get it on Google Play" class="h-14 w-auto object-contain drop-shadow-xl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png"></a>
+    <a href="https://apps.apple.com/in/app/greeting-cards-wishes/id718873921"
+       class="transition-all duration-300 hover:scale-110 hover:-translate-y-1 active:scale-95">
+        <img alt="Download on the App Store"
+             class="h-14 w-auto object-contain drop-shadow-xl"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png">
+    </a>
+
+    <a href="https://play.google.com/store/apps/details?id=com.g123"
+       class="transition-all duration-300 hover:scale-110 hover:-translate-y-1 active:scale-95">
+        <img alt="Get it on Google Play"
+             class="h-14 w-auto object-contain drop-shadow-xl"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png">
+    </a>
+</div>
+
+<div class="flex flex-wrap gap-3 pt-4 justify-center lg:justify-start">
+    
+    <div class="px-5 py-2.5 rounded-full bg-white/90 backdrop-blur-xl border border-stone-200/80 text-sm font-semibold text-stone-700 shadow-[0_8px_25px_rgba(0,0,0,0.08)] hover:shadow-[0_14px_35px_rgba(220,31,38,0.12)] hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-default">
+        30,000+ Cards
+    </div>
+
+    <div class="px-5 py-2.5 rounded-full bg-white/90 backdrop-blur-xl border border-stone-200/80 text-sm font-semibold text-stone-700 shadow-[0_8px_25px_rgba(0,0,0,0.08)] hover:shadow-[0_14px_35px_rgba(220,31,38,0.12)] hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-default">
+        Unlimited Messages
+    </div>
+
+    <div class="px-5 py-2.5 rounded-full bg-white/90 backdrop-blur-xl border border-stone-200/80 text-sm font-semibold text-stone-700 shadow-[0_8px_25px_rgba(0,0,0,0.08)] hover:shadow-[0_14px_35px_rgba(220,31,38,0.12)] hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-default">
+        Zero Friction
+    </div>
+
+</div>
 </div>
 </div>
     <!-- Mobile Hero Stack (3D Pattern) -->
@@ -93,7 +131,7 @@
 <!-- Stats Bar -->
 <section class="bg-surface-container-low py-12 px-6 md:px-8">
 <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
-<div class="flex flex-col items-center text-center md:items-start md:text-left space-y-1">
+<div class="flex flex-col items-center text-center md:items-start md:text-left space-y-1 md:order-last">
 <span class="text-4xl font-headline font-bold text-primary" style="">30K+</span>
 <span class="font-label text-xs uppercase tracking-widest text-on-secondary-container font-bold text-center md:text-left leading-relaxed" style="">Premium eCards</span>
 </div>
@@ -110,6 +148,65 @@
 <span class="font-label text-xs uppercase tracking-widest text-on-secondary-container font-bold text-center md:text-left leading-relaxed max-w-[11rem]" style="">Ads for Pro Members</span>
 </div>
 </div>
+</section>
+<section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-8 lg:px-24">
+
+        <div class="text-center mx-auto max-w-3xl space-y-4 mb-16">
+            <h2 class="text-4xl md:text-6xl lg:text-7xl font-headline text-stone-900 leading-[1.05] tracking-tight">
+                Feel it. <span class="font-serif italic text-primary">Send it.</span> Done.
+            </h2>
+            <div class="mx-auto h-1 w-24 rounded-full bg-primary/20"></div>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2">
+
+            <!-- Friction Card -->
+            <div class="group rounded-[2.5rem] bg-slate-50 p-10 border border-stone-200/80 shadow-[0_25px_80px_-40px_rgba(15,23,42,0.12)] hover:shadow-[0_25px_90px_-30px_rgba(15,23,42,0.18)] hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between min-h-[380px]">
+
+                <div>
+                    <div class="flex justify-center mb-6">
+                        <div class="inline-flex items-center px-4 py-2 rounded-full bg-stone-100 text-xs uppercase tracking-[0.3em] font-bold text-stone-500 shadow-sm">
+                            The Old Way
+                        </div>
+                    </div>
+
+                    <p class="text-3xl md:text-4xl font-headline text-stone-900 leading-tight mb-5">
+                        Other platforms make sending feel like work.
+                    </p>
+
+                    <p class="text-stone-600 leading-relaxed text-lg max-w-xl mx-auto">
+                        Endless typing. Too many steps. Too much friction. What should feel thoughtful ends up feeling like effort.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Solution Card -->
+            <div class="group rounded-[2.5rem] bg-white p-10 border border-primary/10 shadow-[0_25px_90px_-40px_rgba(220,31,38,0.14)] hover:shadow-[0_25px_100px_-30px_rgba(220,31,38,0.22)] hover:-translate-y-1 transition-all duration-500 flex flex-col justify-between min-h-[380px]">
+
+                <div>
+                    <div class="flex justify-center mb-6">
+                        <div class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#DC1F26] via-[#E33A3E] to-[#B11F24] text-sm uppercase tracking-[0.3em] font-bold text-white shadow-[0_20px_40px_-18px_rgba(220,31,38,0.7)] border border-white/20">
+                            <span class="material-symbols-outlined text-base">bolt</span>
+                            Our Way
+                        </div>
+                    </div>
+
+                    <p class="text-3xl md:text-4xl font-headline text-stone-900 leading-tight mb-5">
+                        Open. Pick. Personalize. Send.
+                    </p>
+
+                    <p class="text-stone-600 leading-relaxed text-lg max-w-xl mx-auto">
+                        Find the perfect card, add your touch, and send in seconds. Conveying your thoughts has never been this easy.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 </section>
 <!-- Features Bento Grid -->
 <!-- Features & Categories Section -->
@@ -195,132 +292,101 @@
             </div>
         </div>
 
+<div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
 
-        <!-- Features Bento Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
-<!-- Card 1: Smart Reminders -->
-<div class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between min-h-[220px]">
-<span class="material-symbols-outlined text-4xl text-primary" data-icon="notifications_active" style="">notifications_active</span>
-<div class="space-y-2">
-<h3 class="text-xl font-bold font-headline" style="">Smart Reminders</h3>
-<p class="text-sm text-on-surface-variant leading-relaxed" style="">Never forget birthdays or anniversaries with our intelligent notification system that syncs with your life.</p>
-</div>
-</div>
 
-<!-- Card 2: Send to Multiple -->
-<div class="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between">
-<span class="material-symbols-outlined text-4xl text-tertiary" data-icon="group_add" style="">group_add</span>
-<div class="space-y-2">
-<h3 class="text-xl font-bold font-headline" style="">Multiple Recipients</h3>
-<p class="text-sm text-on-surface-variant" style="">Save time and spread more joy by sending your warm wishes to multiple people at once.</p>
-</div>
-</div>
-<!-- Card 3: Holiday Calendar -->
-<div class="md:col-span-6 lg:col-span-4 bg-secondary text-white p-8 rounded-lg shadow-sm flex flex-col justify-between">
-<span class="material-symbols-outlined text-4xl text-secondary-fixed" data-icon="calendar_month" style="">calendar_month</span>
-<div class="space-y-2">
-<h3 class="text-xl font-bold font-headline" style="">Holidays & Events</h3>
-<p class="text-sm text-secondary-fixed/80" style="">A global calendar of holidays and events to ensure you stay connected with every culture and occasion.</p>
-</div>
-</div>
-<!-- Card 4: Personalize -->
-<div class="md:col-span-2 lg:col-span-3 bg-surface-container-lowest p-8 rounded-lg shadow-sm flex flex-col justify-between">
-<span class="material-symbols-outlined text-4xl text-primary" data-icon="edit_note" style="">edit_note</span>
-<div class="space-y-2">
-<h3 class="text-xl font-bold font-headline" style="">Personalize</h3>
-<p class="text-sm text-on-surface-variant" style="">Craft your own heartfelt message to make every eCard uniquely yours and truly meaningful.</p>
-</div>
-</div>
-<!-- Card 5: Send Anywhere (Large) -->
-<div class="md:col-span-4 lg:col-span-6 bg-surface-container-low p-8 rounded-lg shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col md:flex-row gap-8 items-center overflow-hidden">
-<div class="flex-1 space-y-2">
-<span class="material-symbols-outlined text-4xl text-primary" data-icon="send" style="">send</span>
-<h3 class="text-xl font-bold font-headline" style="">Send Anywhere</h3>
-<p class="text-sm text-on-surface-variant" style="">Share through email, text, or social media. Deliver your feelings instantly, no matter where they are.</p>
-</div>
-<div class="w-full md:w-64 h-48 rounded-xl overflow-hidden shadow-2xl relative p-1 bg-stone-900">
-<img alt="Sending anywhere interface" class="w-full h-full object-cover rounded-lg" src="personalize_ipad.png">
-</div>
-</div>
-<!-- Card 6: Favourites -->
-<div class="md:col-span-6 lg:col-span-3 bg-surface-container-lowest p-8 rounded-lg shadow-sm flex flex-col justify-between">
-<span class="material-symbols-outlined text-4xl text-primary" data-icon="favorite" style="font-variation-settings: &quot;FILL&quot; 1;">favorite</span>
-<div class="space-y-2">
-<h3 class="text-xl font-bold font-headline" style="">Favourite Cards</h3>
-<p class="text-sm text-on-surface-variant" style="">Keep your most-loved cards in a private collection for quick access and reuse.</p>
-</div>
-</div>
-</div>
 </section>
 <!-- How To Send Section -->
 <section class="py-24 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-8 lg:px-24">
+
+        <!-- Heading -->
         <div class="text-center max-w-3xl mx-auto space-y-4 mb-20 md:mb-24">
             <h2 class="text-4xl md:text-5xl lg:text-6xl font-headline text-stone-900 leading-tight">
-                How To <span class="serif-italic text-primary">Send An Ecard</span>
+                Express Yourself in, <br>
+                <span class="serif-italic text-primary">1, 2, 3...</span>
             </h2>
+
             <p class="text-lg md:text-xl text-stone-500 font-light leading-relaxed">
-                Sending heartfelt greetings has never been easier. Just three simple steps to spread joy.
+                From feeling to sharing—just a few taps away.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 relative">
-            <!-- Decorative connection line for desktop -->
-            <div class="hidden md:block absolute top-20 left-[18%] right-[18%] h-px bg-stone-200 -z-10"></div>
-            
+        <!-- Premium Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
+
             <!-- Step 1 -->
-            <div class="relative group text-center md:text-left bg-stone-50/80 border border-stone-100 rounded-3xl px-6 py-8 md:px-8 md:py-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-                <div class="absolute top-4 right-6 text-xs font-bold tracking-[0.3em] text-stone-300 group-hover:text-primary/40 transition-colors duration-300 select-none">01</div>
-                <div class="relative space-y-4 md:space-y-5">
-                    <div class="w-14 h-14 md:w-16 md:h-16 mx-auto md:mx-0 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shadow-sm">
-                        <span class="material-symbols-outlined text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">style</span>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold font-headline text-stone-900 group-hover:text-primary transition-colors duration-300 tracking-tight">Choose Your Ecard</h3>
-                    <p class="text-stone-500 text-sm md:text-base leading-relaxed font-light">Browse through thousands of beautiful ecards for every occasion and holiday.</p>
+            <div class="md:col-span-6 lg:col-span-4 rounded-[2rem] bg-gradient-to-br from-primary to-[#b71c22] text-white p-8 md:p-10 shadow-[0_20px_50px_rgba(220,31,38,0.18)] hover:-translate-y-2 hover:shadow-[0_30px_70px_rgba(220,31,38,0.25)] transition-all duration-500 flex flex-col justify-between min-h-[320px]">
+                
+                <div class="w-16 h-16 rounded-2xl bg-white/15 backdrop-blur-md flex items-center justify-center">
+                    <span class="material-symbols-outlined text-4xl">style</span>
                 </div>
+
+                <div class="space-y-4 mt-10">
+                    <h3 class="text-3xl font-headline">
+                        Choose Your Ecard
+                    </h3>
+
+                    <p class="text-white/85 text-base md:text-lg leading-relaxed max-w-md">
+                        Browse through thousands of beautifully crafted ecards for every occasion, holiday, and heartfelt moment.
+                    </p>
+                </div>
+
             </div>
 
             <!-- Step 2 -->
-            <div class="relative group text-center md:text-left bg-stone-50/80 border border-stone-100 rounded-3xl px-6 py-8 md:px-8 md:py-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-                <div class="absolute top-4 right-6 text-xs font-bold tracking-[0.3em] text-stone-300 group-hover:text-primary/40 transition-colors duration-300 select-none">02</div>
-                <div class="relative space-y-4 md:space-y-5">
-                    <div class="w-14 h-14 md:w-16 md:h-16 mx-auto md:mx-0 rounded-2xl bg-tertiary/10 text-tertiary flex items-center justify-center shadow-sm">
-                        <span class="material-symbols-outlined text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">draw</span>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold font-headline text-stone-900 group-hover:text-primary transition-colors duration-300 tracking-tight">Personalize It</h3>
-                    <p class="text-stone-500 text-sm md:text-base leading-relaxed font-light">Add your personal message and customize the ecard to make it uniquely yours.</p>
+            <div class="md:col-span-6 lg:col-span-4 rounded-[2rem] bg-sky-50 border border-sky-200 p-8 md:p-9 shadow-[0_20px_45px_rgba(14,165,233,0.15)] hover:-translate-y-2 hover:shadow-[0_25px_55px_rgba(14,165,233,0.2)] transition-all duration-500 flex flex-col justify-between min-h-[320px]">
+                
+                <div class="w-14 h-14 rounded-2xl bg-sky-100 text-sky-700 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-3xl">draw</span>
                 </div>
+
+                <div class="space-y-4 mt-10">
+                    <h3 class="text-3xl font-headline text-sky-900">
+                        Personalize It
+                    </h3>
+
+                    <p class="text-sky-700 text-base md:text-lg leading-relaxed max-w-md">
+                        Add your personal message and customize every detail to make it truly yours.
+                    </p>
+                </div>
+
             </div>
 
             <!-- Step 3 -->
-            <div class="relative group text-center md:text-left bg-stone-50/80 border border-stone-100 rounded-3xl px-6 py-8 md:px-8 md:py-10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
-                <div class="absolute top-4 right-6 text-xs font-bold tracking-[0.3em] text-stone-300 group-hover:text-primary/40 transition-colors duration-300 select-none">03</div>
-                <div class="relative space-y-4 md:space-y-5">
-                    <div class="w-14 h-14 md:w-16 md:h-16 mx-auto md:mx-0 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center shadow-sm">
-                        <span class="material-symbols-outlined text-2xl md:text-3xl" style="font-variation-settings: 'FILL' 1;">send</span>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold font-headline text-stone-900 group-hover:text-primary transition-colors duration-300 tracking-tight">Send Instantly</h3>
-                    <p class="text-stone-500 text-sm md:text-base leading-relaxed font-light">Share via email, WhatsApp, Facebook or any social platform in seconds.</p>
+            <div class="md:col-span-6 lg:col-span-4 rounded-[2rem] bg-stone-900 text-white p-8 md:p-9 shadow-[0_15px_40px_rgba(0,0,0,0.12)] hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(0,0,0,0.18)] transition-all duration-500 flex flex-col justify-between min-h-[320px]">
+                
+                <div class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-3xl">send</span>
                 </div>
+
+                <div class="space-y-4 mt-10">
+                    <h3 class="text-3xl font-headline">
+                        Send Instantly
+                    </h3>
+
+                    <p class="text-white/70 text-base md:text-lg leading-relaxed max-w-md">
+                        Share via email, WhatsApp, Facebook, or any platform in seconds.
+                    </p>
+                </div>
+
             </div>
+
         </div>
 
+        <!-- Bottom Tagline -->
+        <div class="mt-4 pt-4 border-t border-stone-100 text-center"></div>
 
-        <!-- Tagline -->
-        <div class="mt-24 pt-12 border-t border-stone-100 text-center">
-            <p class="text-2xl font-headline text-stone-400 font-light">
-                Discover <span class="serif-italic text-stone-900">beautifully crafted</span> cards
-            </p>
-        </div>
     </div>
 </section>
+
 <!-- App Showcase Rows -->
-<section id="occasions" class="px-6 md:px-24 py-16 md:py-24 bg-white">
-<div class="max-w-7xl mx-auto space-y-24 md:space-y-32">
+<section id="occasions" class="px-6 md:px-24 py-8 md:py-12 bg-white">
+<div class="max-w-7xl mx-auto space-y-14 md:space-y-18">
 <!-- Row 1 -->
 <div class="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
 <div class="flex-1 space-y-6 text-center lg:text-left">
-<h2 class="text-3xl md:text-5xl font-headline leading-tight">Discover beautifully curated cards for every occasion</h2>
+<h2 class="text-3xl md:text-5xl lg:text-6xl font-headline leading-tight">Discover beautifully curated cards for <span class="serif-italic text-primary">every occasion</span></h2>
 <p class="text-base md:text-lg text-on-surface-variant leading-relaxed">
                             Explore a diverse collection of beautifully designed cards for every occasion. Find, customize, and share the perfect card effortlessly.
                         </p>
@@ -344,7 +410,7 @@
 <!-- Row 2 -->
 <div class="flex flex-col lg:flex-row-reverse items-center gap-12 md:gap-16">
 <div class="flex-1 space-y-6 text-center lg:text-left">
-<h2 class="text-3xl md:text-5xl font-headline leading-tight">Schedule now, <br>send <span class="serif-italic">later</span>.</h2>
+<h2 class="text-3xl md:text-5xl lg:text-6xl font-headline leading-tight">Schedule now, <br>send <span class="serif-italic text-primary">later.</span></h2>
 <p class="text-base md:text-lg text-on-surface-variant leading-relaxed">
                             Life gets busy. Plan your entire year of celebrations in one afternoon. Our automated delivery system ensures your warm wishes land exactly when they should.
                         </p>
@@ -365,6 +431,34 @@
 </div>
 </div>
 </div>
+<!-- Row 3 -->
+<div class="flex flex-col lg:flex-row items-center gap-12 md:gap-16">
+<div class="flex-1 space-y-6 text-center lg:text-left">
+<h2 class="text-3xl md:text-5xl lg:text-6xl font-headline leading-tight">Because some things shouldn’t <span class="serif-italic text-primary">be shortened</span></h2>
+<p class="text-base md:text-lg text-on-surface-variant leading-relaxed">
+                            Your feelings don’t come with limits—so why should your message?
+                        </p>
+<ul class="space-y-4 inline-block lg:block text-left">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="text-sm md:text-base font-bold">Say everything — no need to cut your words</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="text-sm md:text-base font-bold">Be yourself — no templates, no pressure</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="text-sm md:text-base font-bold">Send freely — whenever the moment feels right</span>
+</li>
+</ul>
+</div>
+<div class="flex-1 w-full max-w-sm lg:max-w-none">
+<div class="bg-surface-container-low rounded-2xl md:rounded-lg p-8 md:p-12 flex justify-center">
+<img alt="App interface" class="rounded-[2.5rem] shadow-2xl w-full max-w-[260px] md:max-w-[280px] mx-auto object-cover border-8 border-stone-800 transition-all duration-500 hover:-translate-y-4 hover:scale-105" src="main_3.png">
+</div>
+</div>
+</div>
 </div>
 </section>
 
@@ -382,18 +476,40 @@
             <div class="space-y-6">
                 <!-- Modern Headline -->
                 <h2 class="text-4xl sm:text-5xl md:text-6xl font-headline text-stone-900 leading-[1.05] tracking-tight break-words">
-                    Celebrate Every Moment, <span class="font-serif italic text-primary"><br class="hidden md:block"/>Uninterrupted</span>
+                    Keep every moment <span class="font-serif italic text-primary">uninterrupted.</span>
                 </h2>
-                
-                <!-- Delicate Body Copy -->
+
                 <p class="text-xl text-stone-500 leading-relaxed font-light">
-                    Enjoy a premium, ad-free experience. Access our most exclusive card collections and prioritize what truly matters: making your loved ones smile.
+                    No ads. No distractions. Just you and the moment you want to share.
                 </p>
+
+                <p class="text-lg text-stone-600 leading-relaxed">
+                    Once you go Pro, everything feels smoother, faster, and more personal—so you can focus on what really matters.
+                </p>
+
+                <ul class="grid gap-3 sm:grid-cols-2 text-left">
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="text-sm md:text-base font-bold">Send and view cards ad-free.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="text-sm md:text-base font-bold">No interruptions, no noise.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="text-sm md:text-base font-bold">Share to multiple people at once.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="text-sm md:text-base font-bold">Smoother and faster sending.</span>
+                    </li>
+                </ul>
             </div>
             
             <!-- Pricing & Availability -->
             <div class="pt-8 border-t border-stone-200 flex flex-col gap-6">
-                <div class="text-4xl font-headline text-stone-900 font-semibold">Only $5.99 <span class="text-sm font-sans text-stone-400 font-normal">/ year</span></div>
+                <div class="text-4xl font-headline text-stone-900 font-semibold">Only $5.99/year</div>
                 <div class="inline-flex items-start gap-4 self-start rounded-2xl border border-stone-200 bg-stone-50 px-5 py-4 shadow-sm">
                     <div class="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
                         <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
@@ -415,12 +531,14 @@
 <!-- Testimonials -->
 <section id="reviews" class="px-8 lg:px-24 py-24 space-y-16">
 <div class="text-center space-y-4">
-<h2 class="text-4xl font-headline" style="">Voices of <span class="serif-italic text-primary" style="">Joy</span></h2>
-<p class="text-on-surface-variant" style="">Hear from our community of over 120 million senders.</p>
+<h2 class="text-5xl md:text-6xl font-headline" style="">Voices of <span class="serif-italic text-primary" style="">Joy</span></h2>
+<p class="text-lg md:text-xl text-on-surface-variant mx-auto max-w-2xl" style="">Hear from our community of over 120 million senders.</p>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-<!-- Testimonial 1 -->
-<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+<div class="relative max-w-7xl mx-auto">
+<div class="overflow-hidden">
+<div id="reviewCarousel" class="flex gap-8 transition-transform duration-500">
+<div class="review-card flex-shrink-0 w-full md:w-[33.333333%]">
+<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full">
 <div class="flex gap-1 text-[#DC1F26]">
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -437,8 +555,9 @@
 </div>
 </div>
 </div>
-<!-- Testimonial 2 -->
-<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+</div>
+<div class="review-card flex-shrink-0 w-full md:w-[33.333333%]">
+<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full">
 <div class="flex gap-1 text-[#DC1F26]">
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -455,8 +574,9 @@
 </div>
 </div>
 </div>
-<!-- Testimonial 3 -->
-<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+</div>
+<div class="review-card flex-shrink-0 w-full md:w-[33.333333%]">
+<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full">
 <div class="flex gap-1 text-[#DC1F26]">
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -473,8 +593,9 @@
 </div>
 </div>
 </div>
-<!-- Testimonial 4 -->
-<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+</div>
+<div class="review-card flex-shrink-0 w-full md:w-[33.333333%]">
+<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full">
 <div class="flex gap-1 text-[#DC1F26]">
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -491,8 +612,9 @@
 </div>
 </div>
 </div>
-<!-- Testimonial 5 -->
-<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+</div>
+<div class="review-card flex-shrink-0 w-full md:w-[33.333333%]">
+<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full">
 <div class="flex gap-1 text-[#DC1F26]">
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -509,8 +631,9 @@
 </div>
 </div>
 </div>
-<!-- Testimonial 6 -->
-<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+</div>
+<div class="review-card flex-shrink-0 w-full md:w-[33.333333%]">
+<div class="bg-surface-container-low p-8 rounded-lg flex flex-col space-y-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full">
 <div class="flex gap-1 text-[#DC1F26]">
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -525,14 +648,24 @@
 <p class="text-sm font-bold text-stone-900">Dr. David Miller</p>
 <p class="text-xs text-stone-500">Active User</p>
 </div>
-</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button id="prevReview" class="absolute left-0 top-[55%] -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 border border-stone-200 shadow-sm hover:bg-white transition-all duration-200 focus:outline-none">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button id="nextReview" class="absolute right-0 top-[55%] -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 border border-stone-200 shadow-sm hover:bg-white transition-all duration-200 focus:outline-none">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
 </div>
 </section>
 <!-- Final CTA -->
 <section class="py-24 bg-surface-container-high px-8">
 <div class="max-w-4xl mx-auto text-center space-y-8">
-<h2 class="text-5xl md:text-6xl font-headline" style="">Ready to spread <span class="serif-italic" style="">happiness</span>?</h2>
-<p class="text-xl text-on-surface-variant" style="">Join millions of others and start making someone's day today. Free to download on all major platforms.</p>
+<h2 class="text-5xl md:text-6xl font-headline" style="">Someone’s on your mind<br><span class="font-serif italic text-primary">reach them.</span></h2>
+<p class="text-xl text-on-surface-variant" style="">It only takes a few seconds to make their day.</p>
 <div class="flex flex-row justify-center items-center gap-4 sm:gap-6 pt-8">
 <a class="transition-all hover:scale-105 active:scale-95" href="https://apps.apple.com/in/app/greeting-cards-wishes/id718873921">
 <img alt="Download on the App Store" class="h-14 lg:h-16 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png">
@@ -626,7 +759,7 @@
         <a class="text-2xl font-headline font-bold text-stone-900 border-b border-stone-100 pb-4" href="#features">Features</a>
         <a class="text-2xl font-headline font-bold text-stone-900 border-b border-stone-100 pb-4" href="#occasions">Occasions</a>
         <a class="text-2xl font-headline font-bold text-stone-900 border-b border-stone-100 pb-4" href="#reviews">Reviews</a>
-        <a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white rounded-full font-label text-base font-bold uppercase tracking-wider mt-4" href="#pro">Go Pro Today</a>
+        <a class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#DC1F26] via-[#E33A3E] to-[#B11F24] text-white rounded-full font-label text-base font-semibold uppercase tracking-wider mt-4 shadow-sm hover:shadow-md transition-all duration-300" href="#pro">Start Sending Moments</a>
     `;
     document.body.appendChild(mobileMenu);
 
@@ -643,5 +776,82 @@
             document.body.style.overflow = '';
         });
     });
+
+    const reviewCarousel = document.getElementById('reviewCarousel');
+    const prevReview = document.getElementById('prevReview');
+    const nextReview = document.getElementById('nextReview');
+    const reviewCards = reviewCarousel ? reviewCarousel.querySelectorAll('.review-card') : [];
+    let reviewIndex = 0;
+
+    const updateReviewPosition = () => {
+        if (!reviewCarousel) return;
+        const visibleCount = window.innerWidth >= 768 ? 3 : 1;
+        const maxIndex = Math.max(0, reviewCards.length - visibleCount);
+        if (reviewIndex > maxIndex) reviewIndex = maxIndex;
+        reviewCarousel.style.transform = `translateX(-${reviewIndex * (100 / visibleCount)}%)`;
+        if (prevReview) prevReview.disabled = reviewIndex <= 0;
+        if (nextReview) nextReview.disabled = reviewIndex >= maxIndex;
+    };
+
+    if (prevReview) {
+        prevReview.addEventListener('click', () => {
+            reviewIndex = Math.max(0, reviewIndex - 1);
+            updateReviewPosition();
+        });
+    }
+
+    if (nextReview) {
+        nextReview.addEventListener('click', () => {
+            const visibleCount = window.innerWidth >= 768 ? 3 : 1;
+            const maxIndex = Math.max(0, reviewCards.length - visibleCount);
+            reviewIndex = Math.min(maxIndex, reviewIndex + 1);
+            updateReviewPosition();
+        });
+    }
+
+    window.addEventListener('resize', updateReviewPosition);
+    updateReviewPosition();
+
+    const scrollProgress = document.getElementById('scrollProgress');
+    const updateScrollProgress = () => {
+        if (!scrollProgress) return;
+        const scrollTop = window.scrollY;
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollHeight > 0 ? Math.min(1, scrollTop / scrollHeight) : 0;
+        scrollProgress.style.transform = `scaleX(${progress})`;
+    };
+
+    window.addEventListener('scroll', updateScrollProgress);
+    updateScrollProgress();
+
+    const sectionLinks = document.querySelectorAll('nav > div:nth-child(2) a[href^="#"]');
+    const trackedSections = Array.from(sectionLinks).map(link => document.querySelector(link.hash)).filter(Boolean);
+    const updateActiveHeaderLink = () => {
+        const scrollTop = window.scrollY;
+        const headerHeight = document.querySelector('nav')?.offsetHeight || 0;
+        let activeId = trackedSections.length ? trackedSections[0].id : '';
+
+        trackedSections.forEach(section => {
+            const sectionTop = section.offsetTop - headerHeight - 20;
+            const sectionBottom = sectionTop + section.offsetHeight;
+            if (scrollTop >= sectionTop && scrollTop < sectionBottom) {
+                activeId = section.id;
+            }
+        });
+
+        sectionLinks.forEach(link => {
+            if (link.hash === `#${activeId}`) {
+                link.classList.add('text-[#DC1F26]', 'border-b-4', 'border-[#DC1F26]', 'font-semibold');
+                link.classList.remove('text-stone-600', 'text-primary');
+            } else {
+                link.classList.remove('text-[#DC1F26]', 'border-b-4', 'border-[#DC1F26]', 'font-semibold');
+                link.classList.add('text-stone-600');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', updateActiveHeaderLink);
+    window.addEventListener('resize', updateActiveHeaderLink);
+    updateActiveHeaderLink();
 </script>
 </body></html>
