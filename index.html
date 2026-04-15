@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>123Greetings | The Digital Keepsake</title>
+    <title>123Greetings | Free Greeting Cards for Every Occasion</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
         rel="stylesheet">
@@ -49,7 +49,7 @@
         class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-stone-200/50 transition-all duration-300">
         <div class="flex justify-between items-center px-8 lg:px-24 py-4 w-full">
             <div class="flex items-center h-16 hover:opacity-80 transition-all duration-300">
-                <a href="index.html" class="h-full flex items-center gap-3">
+                <a href="https://www.123greetings.com/" class="h-full flex items-center gap-3">
                     <img alt="123Greetings Logo" class="h-16 w-auto object-contain" src="LOGO.png" id="mainLogo">
                 </a>
             </div>
@@ -63,8 +63,17 @@
                     data-section-link href="#reviews">Reviews</a>
             </div>
             <div class="flex items-center gap-4">
-<a class="hidden md:inline-flex items-center justify-center px-5 py-2 bg-[#EAF4FF] text-black rounded-full font-label text-sm font-semibold uppercase tracking-wider shadow-sm hover:shadow-md transition-all duration-300"
-    href="#pro">Go Pro</a>
+<a href="#pro"
+    class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full
+    bg-tertiary-fixed text-on-tertiary-fixed
+    font-semibold text-xs tracking-[0.12em]
+    border border-transparent
+    shadow-sm hover:scale-105 hover:-translate-y-0.5 hover:shadow-md
+    transition-all duration-300">
+
+    <span class="material-symbols-outlined text-sm">workspace_premium</span>
+    Go Pro
+</a>
                 <button class="p-2 hover:bg-stone-100 text-stone-700 rounded-full md:hidden transition-colors">
                     <span class="material-symbols-outlined">menu</span>
                 </button>
@@ -78,133 +87,122 @@
     </nav>
     <main class="pt-20 overflow-x-hidden">
         <!-- Hero Section -->
-        <section
-            class="relative px-8 lg:px-24 pt-8 pb-10 lg:pt-12 lg:pb-16 flex flex-col lg:flex-row items-center gap-16 overflow-hidden">
+<section
+    class="relative px-6 sm:px-8 lg:px-24 pt-0 pb-10 lg:pt-1 lg:pb-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-16 overflow-hidden">
+
+    <div
+        class="flex-1 space-y-8 z-10 flex flex-col items-center text-center lg:items-start lg:text-left lg:pr-20">
+
+        <!-- Announcement Badge -->
+        <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 bg-tertiary-fixed text-on-tertiary-fixed rounded-full text-xs uppercase tracking-widest self-center lg:self-start font-sans font-semibold">
+            <span class="material-symbols-outlined text-sm"
+                style="font-variation-settings:'FILL' 1;">star</span>
+            INTRODUCING THE NEW AD-FREE PRO VERSION
+        </div>
+
+        <!-- Heading -->
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-headline leading-[1.05] text-on-surface">
+            Say it as <br>
+            and when you <br>
+            <span class="text-[#DC1F26] italic font-serif">feel it.</span>
+        </h1>
+
+        <!-- Subtext -->
+        <p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mx-auto lg:mx-0">
+            No overthinking. No delays. Just pick, personalize, and send in seconds.
+        </p>
+
+        <!-- Small Premium Pills -->
+        <div class="w-full pt-2">
+            <div class="flex flex-wrap justify-center lg:justify-start gap-2">
+
+                <button
+                    class="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] sm:text-xs font-medium text-stone-700 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-[#DC1F26]/40 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#DC1F26]/20 focus:border-[#DC1F26] active:scale-[0.98]">
+                    30,000+ Cards
+                </button>
+
+                <button
+                    class="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] sm:text-xs font-medium text-stone-700 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-[#DC1F26]/40 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#DC1F26]/20 focus:border-[#DC1F26] active:scale-[0.98]">
+                    Unlimited Messages
+                </button>
+
+                <button
+                    class="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] sm:text-xs font-medium text-stone-700 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-[#DC1F26]/40 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#DC1F26]/20 focus:border-[#DC1F26] active:scale-[0.98]">
+                    Zero Friction
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Mobile Hero Stack -->
+    <div class="lg:hidden relative h-[460px] w-full max-w-sm mx-auto mt-4 mb-16 px-4">
+
+        <div
+            class="absolute left-1/2 top-4 -translate-x-1/2 w-52 z-30 transition-all duration-700 hover:-translate-y-8 hover:scale-110 hover:z-50 cursor-pointer">
             <div
-                class="flex-1 space-y-8 z-10 flex flex-col items-center text-center lg:items-start lg:text-left lg:pr-20">
-                <div
-                    class="inline-flex items-center gap-2 px-4 py-1.5 bg-tertiary-fixed text-on-tertiary-fixed rounded-full text-xs uppercase tracking-widest self-center lg:self-start font-sans font-semibold">
-                    <span class="material-symbols-outlined text-sm"
-                        style="font-variation-settings: &quot;FILL&quot; 1;">star</span>TRUSTED BY MILLIONS WORLDWIDE
-                </div>
-<h1 class="text-5xl md:text-6xl lg:text-7xl font-headline leading-[1.05] text-on-surface">
-    Say it as <br>
-    and when you <br>
-    <span class="text-[#DC1F26] italic font-serif">feel it.</span>
-</h1>
-
-                <p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mx-auto lg:mx-0">
-                    No overthinking. No delays. Just pick, personalize, and send in seconds.
-                </p>
-
-                <div class="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start">
-                    <a href="https://apps.apple.com/in/app/greeting-cards-wishes/id718873921"
-                        class="transition-all duration-300 hover:scale-110 hover:-translate-y-1 active:scale-95">
-                        <img alt="Download on the App Store" class="h-14 w-auto object-contain drop-shadow-xl"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png">
-                    </a>
-
-                    <a href="https://play.google.com/store/apps/details?id=com.g123"
-                        class="transition-all duration-300 hover:scale-110 hover:-translate-y-1 active:scale-95">
-                        <img alt="Get it on Google Play" class="h-14 w-auto object-contain drop-shadow-xl"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png">
-                    </a>
-                </div>
-
-                <div class="flex flex-wrap gap-3 pt-4 justify-center lg:justify-start">
-
-                    <div
-                        class="px-5 py-2.5 rounded-full bg-white/90 backdrop-blur-xl border border-[#DC1F26]/30 text-sm font-semibold text-stone-700 shadow-sm hover:shadow-md hover:border-primary/50 hover:-translate-y-0.5 hover:scale-[1.02] transition-all duration-300 cursor-default">
-                        30,000+ Cards
-                    </div>
-
-                    <div
-                        class="px-5 py-2.5 rounded-full bg-white/90 backdrop-blur-xl border border-[#DC1F26]/30 text-sm font-semibold text-stone-700 shadow-sm hover:shadow-md hover:border-primary/50 hover:-translate-y-0.5 hover:scale-[1.02] transition-all duration-300 cursor-default">
-                        Unlimited Messages
-                    </div>
-
-                    <div
-                        class="px-5 py-2.5 rounded-full bg-white/90 backdrop-blur-xl border border-[#DC1F26]/30 text-sm font-semibold text-stone-700 shadow-sm hover:shadow-md hover:border-primary/50 hover:-translate-y-0.5 hover:scale-[1.02] transition-all duration-300 cursor-default">
-                        Zero Friction
-                    </div>
-
-                </div>
+                class="relative aspect-[738/1600] rounded-[2.5rem] overflow-hidden border-4 border-white shadow-2xl bg-white ring-1 ring-stone-900/10">
+                <img src="hero_3.jpg" alt="App home screen" class="w-full h-full object-cover">
             </div>
-            </div>
-            <!-- Mobile Hero Stack (3D Pattern) -->
-            <div class="lg:hidden relative h-[460px] w-full max-w-sm mx-auto mt-8 mb-16 px-4">
-                <!-- Center Phone (Hero 3) -->
-                <div
-                    class="absolute left-1/2 top-4 -translate-y-0 -translate-x-1/2 w-52 z-30 transition-all duration-700 hover:-translate-y-8 hover:scale-110 hover:z-50 cursor-pointer">
-                    <div
-                        class="relative aspect-[738/1600] rounded-[2.5rem] overflow-hidden border-4 border-white shadow-2xl bg-white ring-1 ring-stone-900/10">
-                        <img src="hero_3.jpg" alt="App home screen" class="w-full h-full object-cover">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent pointer-events-none">
-                        </div>
-                    </div>
-                </div>
+        </div>
 
-                <!-- Left Phone (Hero 1) -->
-                <div
-                    class="absolute left-4 top-16 w-36 z-20 -rotate-12 transition-all duration-700 opacity-90 hover:rotate-[-6deg] hover:-translate-y-8 hover:scale-110 hover:z-50 cursor-pointer">
-                    <div
-                        class="relative aspect-[738/1600] rounded-[2rem] overflow-hidden border-2 border-white shadow-xl bg-white ring-1 ring-stone-900/10">
-                        <img src="hero_1.jpg" alt="App Preview 1" class="w-full h-full object-cover">
-                    </div>
-                </div>
-
-                <!-- Right Phone (Hero 2) -->
-                <div
-                    class="absolute right-4 top-16 w-36 z-20 rotate-12 transition-all duration-700 opacity-90 hover:rotate-[6deg] hover:-translate-y-8 hover:scale-110 hover:z-50 cursor-pointer">
-                    <div
-                        class="relative aspect-[738/1600] rounded-[2rem] overflow-hidden border-2 border-white shadow-xl bg-white ring-1 ring-stone-900/10">
-                        <img src="hero_2.jpg" alt="App Preview 2" class="w-full h-full object-cover">
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- Desktop 3D Stack (Hidden on Mobile) -->
+        <div
+            class="absolute left-4 top-16 w-36 z-20 -rotate-12 transition-all duration-700 opacity-90 hover:rotate-[-6deg] hover:-translate-y-8 hover:scale-110 hover:z-50 cursor-pointer">
             <div
-                class="hidden lg:flex flex-1 relative w-full justify-center items-center py-20 h-[600px] perspective-1000 -translate-x-16">
-                <!-- Left Phone (hero_2.jpg) -->
-                <div
-                    class="absolute left-1/2 -translate-x-[130%] bottom-12 w-48 h-[400px] z-10 transform -rotate-12 transition-all duration-700 hover:rotate-[-6deg] hover:-translate-y-8 hover:scale-110 hover:z-30 cursor-pointer">
-                    <img alt="Previous app version comparison"
-                        class="w-full h-full object-cover rounded-[2.5rem] shadow-xl border-4 border-white ring-1 ring-stone-900/20 bg-white"
-                        src="hero_2.jpg">
-                </div>
-                <!-- Right Phone (hero_1.jpg) -->
-                <div
-                    class="absolute left-1/2 translate-x-[30%] bottom-20 w-48 h-[400px] z-10 transform rotate-12 transition-all duration-700 hover:rotate-[6deg] hover:-translate-y-8 hover:scale-110 hover:z-30 cursor-pointer">
-                    <img alt="App eCard showcase"
-                        class="w-full h-full object-cover rounded-[2.5rem] shadow-xl border-4 border-white ring-1 ring-stone-900/20 bg-white"
-                        src="hero_1.jpg">
-                </div>
-                <!-- Center Phone (hero_3.jpg) -->
-                <div
-                    class="relative z-20 w-56 h-[440px] transform transition-all duration-700 hover:-translate-y-8 hover:scale-105 cursor-pointer">
-                    <img alt="App home screen"
-                        class="w-full h-full object-cover rounded-[3rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] border-[12px] border-white ring-1 ring-stone-900/30 bg-white"
-                        src="hero_3.jpg">
-                    <!-- Glossy Overlay -->
-                    <div
-                        class="absolute inset-0 rounded-[3rem] bg-gradient-to-tr from-white/20 to-transparent ring-1 ring-inset ring-white/10 pointer-events-none">
-                    </div>
-                </div>
+                class="relative aspect-[738/1600] rounded-[2rem] overflow-hidden border-2 border-white shadow-xl bg-white ring-1 ring-stone-900/10">
+                <img src="hero_1.jpg" alt="App Preview 1" class="w-full h-full object-cover">
             </div>
-        </section>
+        </div>
+
+        <div
+            class="absolute right-4 top-16 w-36 z-20 rotate-12 transition-all duration-700 opacity-90 hover:rotate-[6deg] hover:-translate-y-8 hover:scale-110 hover:z-50 cursor-pointer">
+            <div
+                class="relative aspect-[738/1600] rounded-[2rem] overflow-hidden border-2 border-white shadow-xl bg-white ring-1 ring-stone-900/10">
+                <img src="hero_2.jpg" alt="App Preview 2" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Desktop Hero Stack -->
+    <div
+        class="hidden lg:flex flex-1 relative w-full justify-center items-center py-20 h-[600px] perspective-1000 -translate-x-16">
+
+        <div
+            class="absolute left-1/2 -translate-x-[130%] bottom-12 w-48 h-[400px] z-10 -rotate-12 transition-all duration-700 hover:rotate-[-6deg] hover:-translate-y-8 hover:scale-110 hover:z-30 cursor-pointer">
+            <img alt="Previous app version comparison"
+                class="w-full h-full object-cover rounded-[2.5rem] shadow-xl border-4 border-white ring-1 ring-stone-900/20 bg-white"
+                src="hero_2.jpg">
+        </div>
+
+        <div
+            class="absolute left-1/2 translate-x-[30%] bottom-20 w-48 h-[400px] z-10 rotate-12 transition-all duration-700 hover:rotate-[6deg] hover:-translate-y-8 hover:scale-110 hover:z-30 cursor-pointer">
+            <img alt="App eCard showcase"
+                class="w-full h-full object-cover rounded-[2.5rem] shadow-xl border-4 border-white ring-1 ring-stone-900/20 bg-white"
+                src="hero_1.jpg">
+        </div>
+
+        <div
+            class="relative z-20 w-56 h-[440px] transition-all duration-700 hover:-translate-y-8 hover:scale-105 cursor-pointer">
+            <img alt="App home screen"
+                class="w-full h-full object-cover rounded-[3rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] border-[12px] border-white ring-1 ring-stone-900/30 bg-white"
+                src="hero_3.jpg">
+        </div>
+
+    </div>
+
+</section>
         <!-- PRO Section -->
-<section id="pro" class="max-w-7xl mx-auto px-8 lg:px-24 mt-10 mb-16 lg:mt-14 lg:mb-24">
+<section class="max-w-7xl mx-auto px-8 lg:px-24 mt-10 mb-16 lg:mt-14 lg:mb-24">
 
     <!-- Centered Header Above Box -->
     <div class="mb-12 text-center">
-<h2 class="text-4xl md:text-5xl lg:text-7xl font-headline text-stone-900 leading-[1.1]">
-    Introducing the new <br>
-    ad-free <span class="text-[#DC1F26] italic font-serif">Pro Version</span>
-</h2>
+        <h2 class="text-4xl md:text-5xl lg:text-7xl font-headline text-stone-900 leading-[1.1]">
+            Introducing the new <br>
+            ad-free <span class="text-[#DC1F26] italic font-serif">Pro Version</span>
+        </h2>
     </div>
 
     <div
@@ -239,22 +237,22 @@
                 <ul class="grid gap-3 sm:grid-cols-2 text-left">
                     <li class="flex items-start gap-3">
                         <span class="material-symbols-outlined text-primary"
-                            style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            style="font-variation-settings:'FILL' 1;">check_circle</span>
                         <span class="text-sm md:text-base font-bold">Send and view cards ad-free.</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="material-symbols-outlined text-primary"
-                            style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            style="font-variation-settings:'FILL' 1;">check_circle</span>
                         <span class="text-sm md:text-base font-bold">No interruptions, no noise.</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="material-symbols-outlined text-primary"
-                            style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            style="font-variation-settings:'FILL' 1;">check_circle</span>
                         <span class="text-sm md:text-base font-bold">Share to multiple people at once.</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="material-symbols-outlined text-primary"
-                            style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            style="font-variation-settings:'FILL' 1;">check_circle</span>
                         <span class="text-sm md:text-base font-bold">Smoother and faster sending.</span>
                     </li>
                 </ul>
@@ -262,14 +260,17 @@
 
             <!-- Pricing -->
             <div class="pt-8 border-t border-stone-200 flex flex-col gap-6">
-                <div class="text-4xl font-headline text-stone-900 font-semibold">Only $5.99/year</div>
+
+                <div class="text-4xl font-headline text-stone-900 font-semibold">
+                    Only $5.99/year
+                </div>
 
                 <div
                     class="inline-flex items-start gap-4 self-start rounded-2xl border border-stone-200 bg-stone-50 px-5 py-4 shadow-sm">
                     <div
                         class="w-12 h-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
                         <span class="material-symbols-outlined text-2xl"
-                            style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                            style="font-variation-settings:'FILL' 1;">workspace_premium</span>
                     </div>
                     <div class="space-y-1">
                         <p class="text-sm font-bold uppercase tracking-[0.18em] text-stone-400">
@@ -281,6 +282,19 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- Go Pro Button -->
+    <a href="#pro"
+        class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full
+        bg-tertiary-fixed text-on-tertiary-fixed
+        font-semibold text-sm tracking-[0.08em]
+        shadow-sm hover:shadow-md hover:scale-[1.03] hover:-translate-y-0.5
+        transition-all duration-300">
+
+        <span class="material-symbols-outlined text-base">workspace_premium</span>
+        Go Pro
+    </a>
+
             </div>
         </div>
 
@@ -303,18 +317,17 @@
 
     <!-- Premium Go Pro CTA -->
     <div class="flex justify-center mb-14">
-        <a href="#pro"
-            class="inline-flex items-center gap-2 px-10 py-4 rounded-full
-            bg-[#EAF4FF] text-[#1e1eb3]
-            font-semibold text-sm uppercase tracking-[0.18em]
-            border border-[#d6e8ff]
-            shadow-[0_12px_30px_-12px_rgba(30,30,179,0.18)]
-            hover:scale-105 hover:-translate-y-1
-            transition-all duration-300">
+<a href="#pro"
+    class="inline-flex items-center gap-2 px-10 py-4 rounded-full
+    bg-tertiary-fixed text-on-tertiary-fixed
+    font-semibold text-sm tracking-[0.18em]
+    border border-transparent
+    shadow-sm hover:scale-105 hover:-translate-y-1 hover:shadow-md
+    transition-all duration-300">
 
-            <span class="material-symbols-outlined text-base">workspace_premium</span>
-            Go Pro
-        </a>
+    <span class="material-symbols-outlined text-base">workspace_premium</span>
+    Go Pro
+</a>
     </div>
 
     <!-- Cards Grid -->
@@ -328,10 +341,7 @@
             </div>
 
             <div class="space-y-6">
-                <div
-                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-stone-200/50 text-[10px] uppercase tracking-[0.3em] font-bold text-stone-500">
-                    Old Way
-                </div>
+
 
                 <h3 class="text-3xl md:text-4xl font-headline text-stone-800 leading-tight">
                     Some platforms make <br>sending feel like <span
@@ -342,7 +352,7 @@
                     Endless typing. Too many steps. Too much friction. What should feel thoughtful ends up
                     feeling like effort.
                 </p>
-            </div>
+            </div> 
         </div>
 
         <!-- Our Way -->
@@ -455,17 +465,31 @@
                 </div>
 
                 <!-- Thank You -->
-                <div class="group cursor-pointer relative">
-                    <div
-                        class="relative aspect-square md:aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden premium-shadow transition-all duration-700 group-hover:-translate-y-3 premium-shadow-hover">
-                        <img src="ThankYou.jpeg" alt="Thank You"
-                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
-                        <div
-                            class="absolute inset-x-2 bottom-2 md:inset-x-4 md:bottom-4 glass-label py-2 px-1 md:p-4 rounded-xl md:rounded-2xl flex items-center justify-center border border-white/40 shadow-xl backdrop-blur-md">
-                            <span class="text-stone-900 font-headline text-sm md:text-xl font-bold text-center">Thank You</span>
-                        </div>
-                    </div>
-                </div>
+<div class="group cursor-pointer relative rounded-2xl md:rounded-3xl transition-all duration-700 hover:-translate-y-3"
+    style="transform: translateZ(0);">
+
+    <div
+        class="relative aspect-square md:aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden premium-shadow premium-shadow-hover">
+
+        <img src="ThankYou.jpeg" alt="Thank You"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+
+        <div
+            class="absolute inset-x-3 bottom-3 md:inset-x-5 md:bottom-5
+            glass-label py-3 px-3 md:p-4
+            rounded-2xl
+            flex items-center justify-center
+            border border-white/40
+            shadow-xl backdrop-blur-md">
+
+            <span
+                class="text-stone-900 font-headline text-sm md:text-xl font-bold text-center leading-snug">
+                Thank You
+            </span>
+
+        </div>
+    </div>
+</div>
 
                 <!-- Get Well Soon -->
                 <div class="group cursor-pointer relative">
@@ -481,17 +505,31 @@
                 </div>
 
                 <!-- Valentine -->
-                <div class="group cursor-pointer relative">
-                    <div
-                        class="relative aspect-square md:aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden premium-shadow transition-all duration-700 group-hover:-translate-y-3 premium-shadow-hover">
-                        <img src="HAppyValentinesDay.jpeg" alt="Valentine's Day"
-                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
-                        <div
-                            class="absolute inset-x-2 bottom-2 md:inset-x-4 md:bottom-4 glass-label py-2 px-1 md:p-4 rounded-xl md:rounded-2xl flex items-center justify-center border border-white/40 shadow-xl backdrop-blur-md">
-                            <span class="text-stone-900 font-headline text-sm md:text-xl font-bold text-center leading-tight">Valentine's Day</span>
-                        </div>
-                    </div>
-                </div>
+<div class="group cursor-pointer relative rounded-2xl md:rounded-3xl transition-all duration-700 hover:-translate-y-3"
+    style="transform: translateZ(0);">
+
+    <div
+        class="relative aspect-square md:aspect-[3/4] rounded-2xl md:rounded-3xl overflow-hidden premium-shadow premium-shadow-hover">
+
+        <img src="HAppyValentinesDay.jpeg" alt="Valentine's Day"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+
+        <div
+            class="absolute inset-x-3 bottom-3 md:inset-x-5 md:bottom-5
+            glass-label py-3 px-3 md:p-4
+            rounded-2xl
+            flex items-center justify-center
+            border border-white/40
+            shadow-xl backdrop-blur-md">
+
+            <span
+                class="text-stone-900 font-headline text-sm md:text-xl font-bold text-center leading-snug">
+                Valentine's Day
+            </span>
+
+        </div>
+    </div>
+</div>
 
                 <!-- Christmas -->
                 <div class="group cursor-pointer relative">
@@ -901,12 +939,12 @@
             </div>
         </section>
         <!-- Final CTA -->
-<section class="py-24 bg-surface-container-high px-8">
+<section id="pro" class="py-24 bg-surface-container-high px-8">
     <div class="max-w-4xl mx-auto text-center space-y-8">
 
         <p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed font-light max-w-2xl mx-auto">
             It only takes a few seconds to make their day —
-            <a href="#pro"
+            <a 
                class="font-serif italic text-primary hover:opacity-80 transition-opacity duration-300">
                 Go Pro Now.
             </a>
