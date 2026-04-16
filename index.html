@@ -4,12 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Send beautiful greeting cards for birthdays, holidays, and special occasions. Download the 123Greetings app and share joy with your loved ones.">
+    <link rel="canonical" href="https://www.123greetings.com/app" />
     <title>123Greetings | Free Greeting Cards for Every Occasion</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -902,11 +901,11 @@
                     </div>
                 </div>
                 <button id="prevReview"
-                    class="absolute left-0 top-[55%] -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 border border-stone-200 shadow-sm hover:bg-white transition-all duration-200 focus:outline-none">
+                    class="absolute -left-6 md:-left-8 top-[55%] -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 border border-stone-200 shadow-sm hover:bg-white transition-all duration-200 focus:outline-none">
                     <span class="material-symbols-outlined">chevron_left</span>
                 </button>
                 <button id="nextReview"
-                    class="absolute right-0 top-[55%] -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 border border-stone-200 shadow-sm hover:bg-white transition-all duration-200 focus:outline-none">
+                    class="absolute -right-6 md:-right-8 top-[55%] -translate-y-1/2 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/90 border border-stone-200 shadow-sm hover:bg-white transition-all duration-200 focus:outline-none">
                     <span class="material-symbols-outlined">chevron_right</span>
                 </button>
             </div>
@@ -1099,13 +1098,15 @@
             const maxIndex = Math.max(0, reviewCards.length - visibleCount);
             if (reviewIndex > maxIndex) reviewIndex = maxIndex;
             reviewCarousel.style.transform = `translateX(-${reviewIndex * (100 / visibleCount)}%)`;
-            if (prevReview) prevReview.disabled = reviewIndex <= 0;
-            if (nextReview) nextReview.disabled = reviewIndex >= maxIndex;
+           
         };
 
         if (prevReview) {
             prevReview.addEventListener('click', () => {
-                reviewIndex = Math.max(0, reviewIndex - 1);
+                const visibleCount = window.innerWidth >= 768 ? 3 : 1;
+                const maxIndex = Math.max(0, reviewCards.length - visibleCount);
+
+                reviewIndex = reviewIndex <= 0 ? maxIndex : reviewIndex - 1;
                 updateReviewPosition();
             });
         }
@@ -1114,7 +1115,8 @@
             nextReview.addEventListener('click', () => {
                 const visibleCount = window.innerWidth >= 768 ? 3 : 1;
                 const maxIndex = Math.max(0, reviewCards.length - visibleCount);
-                reviewIndex = Math.min(maxIndex, reviewIndex + 1);
+
+                reviewIndex = reviewIndex >= maxIndex ? 0 : reviewIndex + 1;
                 updateReviewPosition();
             });
         }
