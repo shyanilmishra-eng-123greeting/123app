@@ -17,6 +17,15 @@
     <script src="tailwind-config.js"></script>
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" type="image/webp" href="favicon.webp">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSJN79W2VN"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-ZSJN79W2VN');
+	</script>
     <style>
         @keyframes navPop {
             0% {
@@ -108,7 +117,6 @@
 
         <!-- Subtext -->
         <p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mx-auto lg:mx-0">
-            No overthinking. No delays. <br>
             Just pick, personalize, and send in seconds.
         </p>
 
@@ -199,7 +207,7 @@
     <!-- Centered Header Above Box -->
     <div class="mb-12 text-center">
 <h2 class="text-4xl md:text-5xl lg:text-7xl font-headline text-stone-900 leading-[1.1]">
-    Say it as and <br>
+    Send as and <br>
     when you <span class="text-[#DC1F26] italic font-serif">feel it.</span>
 </h2>
     </div>
@@ -208,11 +216,13 @@
         class="relative rounded-[2.5rem] overflow-hidden shadow-[0_30px_80px_-20px_rgba(0,0,0,0.08)] bg-white border border-stone-200/60 group flex flex-col lg:flex-row">
 
         <!-- Left Image -->
-        <div class="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-full overflow-hidden">
-            <img src="pro_family.webp" alt="A grandmother and granddaughter laughing over an eCard"
-                class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.03] scale-100">
-        </div>
-
+<div class="w-full lg:w-1/2 relative overflow-hidden bg-gray-100 flex items-center justify-center">
+    <img 
+        src="pro_family.webp" 
+        alt="A grandmother and granddaughter laughing over an eCard"
+        class="w-full h-full object-cover object-center"
+    >
+</div>
         <!-- Right Content -->
         <div
             class="w-full lg:w-1/2 relative z-10 p-8 sm:p-10 lg:p-20 flex flex-col justify-center gap-10 bg-white">
@@ -252,7 +262,7 @@
                     <li class="flex items-start gap-3">
                         <span class="material-symbols-outlined text-primary"
                             style="font-variation-settings:'FILL' 1;">check_circle</span>
-                        <span class="text-sm md:text-base font-bold">Smoother and faster sending.</span>
+                        <span class="text-sm md:text-base font-bold">Smoother and faster.</span>
                     </li>
                 </ul>
             </div>
@@ -401,10 +411,10 @@
                 Ecards for <span class="serif-italic text-primary">Every Occasion</span>
             </h2>
 
-            <p class="text-lg md:text-xl text-stone-500 font-body max-w-2xl font-light leading-relaxed">
-                From birthdays to holidays, find the perfect ecard waiting for you.
-            </p>
-        </div>
+		<p class="text-lg md:text-xl text-stone-500 font-body font-light leading-relaxed whitespace-nowrap">
+			From birthdays to holidays, find the perfect ecard you would like to send.
+		</p>
+				</div>
 
         <!-- Occasions Grid -->
         <div class="max-w-5xl mx-auto mb-12 px-4 sm:px-0">
@@ -629,7 +639,7 @@
                             <span class="serif-italic text-primary">later.</span>
                         </h2>
                         <p class="text-base md:text-lg text-on-surface-variant leading-relaxed">
-                            Plan at your own convenience. Our automated delivery system ensures your warm wishes land when you want them to.
+                            Plan at your own convenience. Our automated delivery system ensures your warm wishes is delivered on the date when you want them to.
                         </p>
                         <ul class="space-y-4 inline-block lg:block text-left">
                             <li class="flex items-start gap-3">
@@ -877,6 +887,44 @@
     <footer class="w-full py-12 bg-stone-50 border-t border-stone-200">
         <div class="px-8 lg:px-24 max-w-7xl mx-auto flex flex-col items-center space-y-8">
 
+		<div class="px-8 lg:px-24 max-w-3xl mx-auto mb-10">
+			  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+				
+				<!-- Item 1 -->
+				<div class="flex items-center justify-center h-12 md:h-20">
+				  <a href="https://openhunts.com" target="_blank" title="OpenHunts Club">
+					<img
+					  src="https://cdn.openhunts.com/badges/club.webp"
+					  alt="OpenHunts Club Member"
+					  class="h-full max-w-[200px] object-contain"
+					/>
+				  </a>
+				</div>
+
+				<!-- Item 2 -->
+				<div class="flex items-center justify-center h-12 md:h-20">
+				  <a href="https://fazier.com" target="_blank">
+					<img
+					  src="https://fazier.com/api/v1/public/badges/launch_badges.svg?badge_type=launched&theme=light"
+					  alt="Fazier badge"
+					  class="h-full max-w-[200px] object-contain"
+					/>
+				  </a>
+				</div>
+
+				<!-- Item 3 -->
+				<div class="flex items-center justify-center h-12 md:h-20">
+				  <a href="https://smollaunch.com" target="_blank" rel="noopener">
+					<img
+					  src="https://smollaunch.com/badges/featured.svg"
+					  alt="Featured on Smol Launch"
+					  class="h-full max-w-[200px] object-contain"
+					/>
+				  </a>
+				</div>
+
+			  </div>
+			</div>
             <!-- Social Media Row -->
             <div class="flex flex-col md:flex-row items-center gap-4 md:gap-6">
                 <span class="text-sm font-medium text-stone-600">Stay Connected:</span>
