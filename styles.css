@@ -21,6 +21,11 @@
     visibility: visible;
 }
 
+.mobile-menu-btn .material-symbols-outlined,
+.mobile-menu-panel .material-symbols-outlined {
+    visibility: visible;
+}
+
 .go-pro-btn {
     display: inline-flex;
     align-items: center;
