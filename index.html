@@ -99,52 +99,82 @@
 <section
     class="relative px-6 sm:px-8 lg:px-24
            mt-0 lg:-mt-6
-           pt-20 sm:pt-24 lg:pt-1
+           pt-10 sm:pt-12 lg:pt-6
            pb-4 lg:pb-16
-           flex flex-col lg:flex-row items-center gap-6 lg:gap-16 overflow-hidden">
+           flex flex-col lg:flex-row items-center gap-2 lg:gap-10 overflow-hidden">
 
+    <!-- Left Content -->
     <div
-        class="flex-1 space-y-5 lg:space-y-8 z-10 flex flex-col items-center text-center lg:items-start lg:text-left lg:pr-20">
+        class="flex-1 space-y-4 lg:space-y-6 z-10 flex flex-col items-center text-center lg:items-start lg:text-left lg:pr-20">
 
-        <!-- Announcement Badge -->
+        <!-- Desktop Heading -->
+        <h1
+            class="hidden lg:block text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-headline leading-[1.02] text-on-surface mt-10">
 
+            <span class="block mb-5">
+                Introducing the
+            </span>
 
-        <!-- Heading -->
-        <h1 class="hidden lg:block text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-headline leading-[1.05] text-on-surface">
-            Introducing the <br>
-            ad-free <br>
-            <span class="text-[#DC1F26] italic font-serif">Pro Version</span>
+            <span class="text-[#DC1F26] block mb-5">
+                Ad-Free
+            </span>
+
+            <span class="font-normal block">
+                Pro Version
+            </span>
         </h1>
 
-        <div class="lg:hidden flex flex-col items-center gap-3 mt-1">
-            <h1 class="text-[2.45rem] leading-[1.04] font-headline text-on-surface">
-                Introducing <br>
-                Adfree <br>
-                <span class="text-[#DC1F26] italic font-serif">Pro Version</span>
+        <!-- Mobile Heading -->
+        <div class="lg:hidden flex flex-col items-center gap-5 -mt-10">
+
+            <h1 class="text-[2.45rem] leading-[0.95] font-headline text-on-surface">
+
+                <span class="block mb-4">
+                    Introducing
+                </span>
+
+                <span class="text-[#DC1F26] block mb-4">
+                    Ad-Free
+                </span>
+
+                <span class="font-normal block">
+                    Pro Version
+                </span>
             </h1>
-            <div class="inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-4 py-2.5 text-[#1D4ED8] shadow-[0_10px_28px_-18px_rgba(29,78,216,0.75)] ring-1 ring-blue-200">
-                <span class="rounded-full bg-blue-50 px-2.5 py-1 font-body text-[10px] font-extrabold uppercase tracking-[0.18em]">Only</span>
-                <span class="font-headline italic text-[2rem] leading-none">$5.99</span>
-                <span class="font-body text-xs font-bold uppercase tracking-[0.12em]">/ year</span>
+
+            <!-- Price Badge -->
+            <div
+                class="inline-flex items-baseline justify-center gap-1.5 rounded-full bg-blue-50 px-4 py-2 text-[#1D4ED8] shadow-sm ring-1 ring-blue-100 mt-2">
+                <span class="font-body text-xs font-bold uppercase tracking-[0.16em]">
+                    Only
+                </span>
+
+                <span class="font-headline italic text-3xl leading-none">
+                    $5.99
+                </span>
+
+                <span class="font-body text-sm font-semibold">
+                    per year
+                </span>
             </div>
         </div>
 
-        <!-- Small Premium Pills -->
-        <div class="w-full pt-4 lg:pt-0">
+        <!-- Feature Pills -->
+        <div class="w-full pt-2 lg:pt-0">
             <div class="flex flex-wrap justify-center lg:justify-start gap-2">
 
                 <button
-                    class="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] sm:text-xs font-medium text-stone-700 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-[#DC1F26]/40 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#DC1F26]/20 focus:border-[#DC1F26] active:scale-[0.98]">
+                    class="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] sm:text-xs font-medium text-stone-700 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-[#DC1F26]/40 hover:shadow-md">
                     30,000+ Cards
                 </button>
 
                 <button
-                    class="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] sm:text-xs font-medium text-stone-700 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-[#DC1F26]/40 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#DC1F26]/20 focus:border-[#DC1F26] active:scale-[0.98]">
+                    class="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] sm:text-xs font-medium text-stone-700 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-[#DC1F26]/40 hover:shadow-md">
                     Unlimited Messages
                 </button>
 
                 <button
-                    class="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] sm:text-xs font-medium text-stone-700 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-[#DC1F26]/40 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#DC1F26]/20 focus:border-[#DC1F26] active:scale-[0.98]">
+                    class="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-[11px] sm:text-xs font-medium text-stone-700 shadow-sm whitespace-nowrap transition-all duration-200 hover:border-[#DC1F26]/40 hover:shadow-md">
                     Zero Friction
                 </button>
 
@@ -152,15 +182,16 @@
         </div>
 
         <!-- Subtext -->
-        <p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mx-auto lg:mx-0 mt-1 lg:mt-0">
+        <p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed mx-auto lg:mx-0 mt-0">
             Just pick, personalize, and send in seconds.
         </p>
 
     </div>
 
     <!-- Mobile Hero Stack -->
-    <div class="lg:hidden relative h-[430px] w-full max-w-sm mx-auto mt-0 mb-8 px-4">
+    <div class="lg:hidden relative h-[400px] w-full max-w-sm mx-auto mt-0 mb-4 px-4">
 
+        <!-- Center Phone -->
         <div
             class="absolute left-1/2 top-0 -translate-x-1/2 w-52 z-30 transition-all duration-700 hover:-translate-y-8 hover:scale-110 hover:z-50 cursor-pointer">
             <div
@@ -169,6 +200,7 @@
             </div>
         </div>
 
+        <!-- Left Phone -->
         <div
             class="absolute left-4 top-12 w-36 z-20 -rotate-12 transition-all duration-700 opacity-90 hover:rotate-[-6deg] hover:-translate-y-8 hover:scale-110 hover:z-50 cursor-pointer">
             <div
@@ -177,6 +209,7 @@
             </div>
         </div>
 
+        <!-- Right Phone -->
         <div
             class="absolute right-4 top-12 w-36 z-20 rotate-12 transition-all duration-700 opacity-90 hover:rotate-[6deg] hover:-translate-y-8 hover:scale-110 hover:z-50 cursor-pointer">
             <div
@@ -189,8 +222,9 @@
 
     <!-- Desktop Hero Stack -->
     <div
-        class="hidden lg:flex flex-1 relative w-full justify-center items-center py-20 h-[600px] perspective-1000 -translate-x-16">
+        class="hidden lg:flex flex-1 relative w-full justify-center items-center py-10 h-[560px] perspective-1000 -translate-x-16">
 
+        <!-- Left Card -->
         <div
             class="absolute left-1/2 -translate-x-[130%] bottom-12 w-48 h-[400px] z-10 -rotate-12 transition-all duration-700 hover:rotate-[-6deg] hover:-translate-y-8 hover:scale-110 hover:z-30 cursor-pointer">
             <img alt="Previous app version comparison"
@@ -198,6 +232,7 @@
                 src="hero_2.webp">
         </div>
 
+        <!-- Right Card -->
         <div
             class="absolute left-1/2 translate-x-[30%] bottom-20 w-48 h-[400px] z-10 rotate-12 transition-all duration-700 hover:rotate-[6deg] hover:-translate-y-8 hover:scale-110 hover:z-30 cursor-pointer">
             <img alt="App eCard showcase"
@@ -205,6 +240,7 @@
                 src="hero_1.webp">
         </div>
 
+        <!-- Center Card -->
         <div
             class="relative z-20 w-56 h-[440px] transition-all duration-700 hover:-translate-y-8 hover:scale-105 cursor-pointer">
             <img alt="App home screen"
